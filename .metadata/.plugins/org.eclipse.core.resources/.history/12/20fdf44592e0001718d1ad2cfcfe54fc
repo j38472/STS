@@ -1,0 +1,22 @@
+package com.zgcxueyuan.myday4;
+import java.util.*;
+/**
+ * ª®µÍ¿‡
+ * @author Administrator
+ *
+ */
+public class FlowerShop {
+	public static void main(String[] args) {
+		purchase();
+	}
+	public static void purchase() {
+		Map<Integer, Flower> flow = new HashMap<>();
+		flow.put(001, new Flower("√µπÂ", "10"));
+		flow.put(002, new Flower("√µπÂ2", "20"));
+		Set<Integer> is =	flow.keySet();
+		for (Integer i : is) {
+			System.out.println(flow.get(i).name);
+		}
+		System.out.println();
+	}
+}

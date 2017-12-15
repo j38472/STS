@@ -1,0 +1,16 @@
+package com.zgcxueyuan.myday2;
+
+import java.util.ArrayList;
+
+/**
+ * 去除集合中字符串的重复值
+ * @author Administrator
+ *{1,2,3.4,5,4.8,4,5,6,4.5,1,4,5,6,4,5,8,4,3,5,4,3,2,2,8,5,4,8,8,5,4,8,6,4,5,4}
+ */
+public class Demo1 {
+	public static void main(String[] args) {
+		 int i [] =  {1,2,3,4,5,4,8,4,5,6,4,5,1,4,5,6,4,5,8,4,3,5,4,3,2,2,8,5,4,8,8,5,4,8,6,4,5,4};
+		ArrayList<Object> al = new ArrayList<Object>();
+		
+	}
+}

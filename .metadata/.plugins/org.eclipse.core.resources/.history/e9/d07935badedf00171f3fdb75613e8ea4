@@ -1,0 +1,8 @@
+package com.zgcxueyuan.myday3;
+import java.util.*;
+public class MyTreeSet {
+
+
+	public static void main(String[] args) {}
+
+}

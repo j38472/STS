@@ -1,0 +1,74 @@
+package com.zgcxueyuan.register;
+
+import java.util.Scanner;
+
+/**
+ * 修改客户信息界面
+ * 
+ * @author Administrator
+ *
+ */
+public class AlterInformationInteerface implements IInterfaceAcceptor {
+
+	@Override
+	public void Interface() {
+		System.out.println("购物管理系统->客户管理界面->修改客户信息界面");
+		Acceptor();
+	}
+
+	@Override
+	public void Acceptor() {
+		System.out.println("请问想修改那一部分（1（客户名称）2（生日日期）3（积分）0（返回上一级））");
+		Scanner sca = new Scanner(System.in);
+		int key = sca.nextInt();
+		switch (key) {
+		case 1:
+			setName();
+			break;
+		case 2:
+			setBirthday();
+			break;
+		case 3:
+			setIntegral();
+			break;
+		case 0:
+			CustomerManagementInterface cmi = new CustomerManagementInterface();
+			cmi.Interface();
+			break;
+		default:
+			sca.close();
+			break;
+		}
+	}
+
+	/**
+	 * 修改名字
+	 */
+	private void setName() {
+		System.out.println("请以此输入客户生日与积分");
+		Scanner sca = new Scanner(System.in);
+		String name = sca.next();
+		String integral = sca.next();
+		sca.close();
+	}
+	/**
+	 * 修改生日
+	 */
+	private void setBirthday() {
+
+	}
+	/**
+	 * 修改积分
+	 */
+	private void setIntegral() {
+
+	}
+	/**
+	 * 计算客户信息的行数 
+	 * @return 行数 
+	 */
+	private int lineNumber(){
+		return 0;
+	}
+
+}

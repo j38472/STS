@@ -1,0 +1,10 @@
+package com.zgcxueyuan.register;
+
+public class MainClass {
+	public static void main(String[] args) {
+		AddInformationInterface ai = new AddInformationInterface();
+		ai.Interface();
+		
+		
+	}
+}

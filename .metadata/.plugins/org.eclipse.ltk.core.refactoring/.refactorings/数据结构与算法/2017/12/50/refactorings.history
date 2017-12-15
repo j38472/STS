@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;引论.本章讨论内容&apos; to &apos;第一章_引论.本章讨论内容&apos;&#x0D;&#x0A;- Original project: &apos;数据结构与算法&apos;&#x0D;&#x0A;- Original element: &apos;数据结构与算法/src/引论.本章讨论内容&apos;&#x0D;&#x0A;- Renamed element: &apos;数据结构与算法/src/第一章_引论.本章讨论内容&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;引论.本章讨论内容&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;引论.本章讨论内容" name="第一章_引论.本章讨论内容" qualified="false" references="true" stamp="1513164695058" textual="false" version="1.0"/>
+</session>

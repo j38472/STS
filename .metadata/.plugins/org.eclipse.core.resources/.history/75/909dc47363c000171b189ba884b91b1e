@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+		<body>
+			<!-- 头 -->
+			<div style="width: 100%;height: 60px">
+				<div style="float: left;">
+					<img alt="" src="图片素材/163logo.gif">
+				</div>
+				<div style="float:right;">
+					免费邮 企业邮 VIP邮箱 帮助 
+				</div>
+			</div>
+			<div>
+			
+			</div>
+			<div>
+			
+			</div>
+		</body>
+</html>

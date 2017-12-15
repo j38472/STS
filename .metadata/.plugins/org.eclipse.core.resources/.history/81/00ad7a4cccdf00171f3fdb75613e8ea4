@@ -1,0 +1,13 @@
+package 引论.本章讨论内容;
+/**
+ * 设有一组N个数而要确定其中第K个最大值
+ * 把前N
+ * @author Administrator
+ *
+ */
+public class DemoOne {
+	public static void main(String[] args) {
+		
+	}
+	
+}

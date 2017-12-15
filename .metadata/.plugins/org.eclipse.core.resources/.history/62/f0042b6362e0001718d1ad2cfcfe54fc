@@ -1,0 +1,25 @@
+package com.zgcxueyuan.day3;
+/**
+ * 人物类
+ * @author Administrator
+ *
+ */
+public class Figure {
+	// 私有构造
+	private Figure() {
+	}
+	/**
+	 * 
+	 * @param isLandlord true 是地主  
+	 */
+	public Figure(boolean isLandlord) {
+		if (isLandlord==true) {
+			length = 22 ;
+		}else {
+			length = 18 ;
+		}
+		
+	}
+	int length = 0 ;
+	int board [] =new int [length];;
+}

@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+#navigationbar{
+	width:1000px;
+	margin:0px auto;
+	overflow:hidden;
+	clear:both;
+}
+a {
+	text-decoration:none;
+	color:#2b62a5;
+}
+li {
+	list-style:none;
+}

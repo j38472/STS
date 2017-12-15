@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.zgcxueyuan.register.RegisterSystemInterface"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.register.AlterInformationInteerface"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.io.IODome"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.b.Outer"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.register.IInterfaceAcceptor"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.demo1.Student"/>
+<fullyQualifiedTypeName name="java.nio.Buffer"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.bxd.BufferedReaderDemo"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.bxd.BufferedWriterDemo"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="chenyuanhao_b.StudentList"/>
+<fullyQualifiedTypeName name="chenyuanhao_b.Student"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.day2.Queue"/>
+<fullyQualifiedTypeName name="com.zgcxueyuan.day2.SortedSetDemo"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,81 @@
+package com.zgcxueyuan.free;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+public class DateUtil {
+	/**
+	 * 实例化方法： 格式化输出日期 toString () addYear(int n ) addMonth(int n) addDar(int n)
+	 * getYear() getMonth() getDay() subtract(Date) 返回天
+	 * 
+	 * 静态方法 getAge(Date) subtract(Date,Date) toString(Date,String)
+	 * 
+	 * @return
+	 */
+	// private int year;
+	// private int month;
+	// private int day;
+	private Date mDate;
+	Calendar cal = Calendar.getInstance();
+	
+	public DateUtil(Date date) {
+		mDate = date;
+	}
+
+	public DateUtil(long millis) {
+		mDate= new Date(millis);
+	}
+
+	public DateUtil(String date) throws ParseException {
+		DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+		mDate = format.parse(date);
+	}
+
+
+
+	public void addYear(int n) {
+		cal.setTime(mDate);
+		cal.set(Calendar.YEAR, n);
+	}
+
+	public void addMonth(int n) {
+		cal.setTime(mDate);
+		cal.set(Calendar.MONTH, n);
+
+	}
+
+	public void addDay(int n) {
+		cal.setTime(mDate);
+		cal.set(Calendar.DAY, n);
+	}
+	
+	
+
+	public int getYear() {
+		cal.setTime(mDate);
+		return cal.get(Calendar.YEAR);
+
+	}
+
+	public int getMonth() {
+		cal.setTime(mDate);
+		return cal.get(Calendar.MONTH);
+	}
+
+	public int getDay() {
+		cal.setTime(mDate);
+		return cal.get(Calendar.DAY_OF_MONTH);
+	}
+
+	public int subtract(Date date) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(mDate);
+		return calendar.get(Calendar.DAY_OF_YEAR);
+	}
+	public String toString() {
+
+		return null;
+	}
+}

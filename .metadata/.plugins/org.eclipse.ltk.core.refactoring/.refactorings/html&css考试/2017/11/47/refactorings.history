@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;html&amp;css考试/html&amp;css考试CSS.css&apos; to &apos;Main.css&apos;" description="Rename resource &apos;html&amp;css考试CSS.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="html&amp;css考试CSS.css" name="Main.css" stamp="1511502080798" updateReferences="true"/>
+</session>

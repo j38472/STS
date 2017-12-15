@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table style="width: 100%">
+		<!-- 头 -->
+		<tr style="width: 100%">
+			<td>
+				<table style="width: 100%">
+					<tr>
+						<td style="colspan:7;width: 80%">
+							<img  src="图片素材/163logo.gif">
+						</td>
+						<td>
+							免费邮 企业邮 VIP邮箱 帮助
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- 身 -->
+		<tr style="width: 100%">
+			<!-- 左 -->
+			<td>
+				<table>
+					
+				</table>
+			</td>
+			<td>
+				<table></table>
+			</td>
+			<!-- 右 -->
+		</tr>
+		<!-- 尾 -->
+		<tr>
+			<td>
+			</td>
+			
+		</tr>
+	</table>
+</body>
+</html>

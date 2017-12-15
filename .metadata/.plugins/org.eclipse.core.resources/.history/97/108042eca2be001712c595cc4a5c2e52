@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here 表格清单</title>
+</head>
+<body>
+
+	<table border="1" style="width: 800px"  >
+		<tr align="center" height="800px">
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+	</table>
+
+</body>
+</html>

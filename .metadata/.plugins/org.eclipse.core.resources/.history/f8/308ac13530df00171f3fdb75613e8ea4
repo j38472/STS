@@ -1,0 +1,29 @@
+package com.zgcxueyuan.myday3;
+import static org.hamcrest.CoreMatchers.containsString;
+
+import java.util.*;
+public class MyTreeSet {
+
+
+
+	public static void main(String[] args) {
+		TreeSet<Integer> ts =  new  TreeSet( );
+		
+	}
+
+}
+class Z extends Collections{
+	  int size;
+	    public Z( int size){
+	        this.size = size;
+	    }
+
+	    public int compareTo(Object o) {
+	    //”¿‘∂≤ªœ‡µ»
+	        return 1;
+	    }
+
+	    public boolean equals(Object obj) {
+	        return true;
+	    }
+}

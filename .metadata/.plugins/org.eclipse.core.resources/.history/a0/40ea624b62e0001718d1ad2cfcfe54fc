@@ -1,0 +1,21 @@
+package com.zgcxueyuan.day3;
+/**
+ * 人物类
+ * @author Administrator
+ *
+ */
+public class Figure {
+	int board [] = null;
+	// 提供构造
+	private Figure(int length) {
+		board = new int [length];
+	}
+	public Figure(boolean bo) {
+		if (bo==true) {
+			this(18);
+		}else {
+			this(22);
+		}
+		
+	}
+}

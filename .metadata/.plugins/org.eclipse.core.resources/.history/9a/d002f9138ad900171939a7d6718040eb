@@ -1,0 +1,8 @@
+package com.zgcxueyuan.free;
+
+public class MainDemo {
+	public static void main(String[] args) {
+		DateUtil du = new DateUtil("2019-11-02");
+		System.out.println(du.getMonth());
+	}
+}

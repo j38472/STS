@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ＨＴＭＬ综合习题/03 提供给学员的上机练习素材/共性头尾抽离.css&apos; to &apos;Main.css&apos;" description="Rename resource &apos;共性头尾抽离.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="03 提供给学员的上机练习素材/共性头尾抽离.css" name="Main.css" stamp="1510905031140" updateReferences="true"/>
+</session>

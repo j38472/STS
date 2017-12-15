@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" Language="JavaScript">
+	document.Write(<p>"这是document.write 语句 "</p>);
+	document.close();
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

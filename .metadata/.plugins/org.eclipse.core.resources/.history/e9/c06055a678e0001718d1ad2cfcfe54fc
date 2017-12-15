@@ -1,0 +1,55 @@
+package com.zgcxueyuan.day3;
+
+import java.util.*;
+
+/**
+ * 需求：
+ * 		模拟斗地主的发牌和洗牌（包含其地主，初始时随机）
+ * 思路：
+ * 		1。创建斗地主的人物类 figure
+ * 		2.一个长度为三的装有人物类集合
+ * 		3.一个数组存放一幅有序的扑克
+ * 		4.用随机数来发牌 可以使用递归 每次发一张拍就把那张牌覆盖掉 
+ * 		5.地主的容器长度声明为22 农民容器长度声明为18
+ * 		6.取一个随机数将其数值取余3判断其地主是谁 然后把地主容器给他
+ * 		7.洗牌 把牌数组重新填充满
+ * @author Administrator
+ *	荷官类
+ */
+public class Croupier {
+	int board [] = new int [58];//声明一个可以装一幅牌的容器
+	int count = 0 ; // 尾部指针
+	/**
+	 *发牌类 
+	 */
+	public void deal(){
+		ArrayList<Figure> al = new ArrayList<>();
+		boolean isLandlord = true;//是地主
+		for (int i = 0; i < 3; i++) {
+			al.add(new Figure(isLandlord));
+			if (isLandlord==true) //地主只有一个
+				isLandlord = false;
+		}
+		boardBuilder();
+	}
+	/**
+	 * 牌生成器
+	 * -2 大王 -1 小王  0 K
+	 */                        
+	private void boardBuilder() {
+		board[0] = -2; //大王
+		board[1] = -1; //小王
+		for (int i = 2; i < board.length; i++) {
+			board[i]=i%14;
+		}
+		System.out.println();
+	}
+	/**
+	 * 随机数生成器
+	 */
+	private int randomizer() {
+		int i =  (int) (Math.random() * board.length + start);
+		return 0;
+	}
+	
+}

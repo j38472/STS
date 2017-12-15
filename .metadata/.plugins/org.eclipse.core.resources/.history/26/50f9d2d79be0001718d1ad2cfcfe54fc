@@ -1,0 +1,34 @@
+package com.zgcxueyuan.day3;
+/**
+ * 人物类
+ * @author Administrator
+ *
+ */
+public class Figure {
+	private int length = 0 ;
+	private int board [] =new int [length];
+	int count =  length ;//尾部指针
+	/**
+	 * 
+	 * @param isLandlord true 是地主    false 不是地主
+	 */
+	public Figure(boolean isLandlord) {
+		if (isLandlord==true) {
+			length = 22 ;
+		}else {
+			length = 18 ;
+		}
+	}
+	//下方为get set 方法
+	public int[] getBoard() {
+		return board;
+	}
+	public void setBoard(int[] board) {
+		this.board = board;
+	}
+	public int getLength() {
+		return length;
+	} 
+
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;chenyuanhao&apos; to &apos;chenyuanhao_b&apos;&#x0D;&#x0A;- Original project: &apos;JingXiu&apos;&#x0D;&#x0A;- Original element: &apos;JingXiu/src/chenyuanhao&apos;&#x0D;&#x0A;- Renamed element: &apos;JingXiu/src/chenyuanhao_b&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;chenyuanhao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;chenyuanhao" name="chenyuanhao_b" qualified="false" references="true" stamp="1511848093484" textual="false" version="1.0"/>
+</session>

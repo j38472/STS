@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="referrer"
+  id="myeclipse.1372849083135"
+  context-root="/referrer"
+  j2ee-spec="5.0"
+  archive="referrer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

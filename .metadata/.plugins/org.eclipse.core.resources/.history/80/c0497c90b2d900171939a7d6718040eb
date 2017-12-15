@@ -1,0 +1,26 @@
+package com.zgcxueyuan.register;
+
+import java.util.Scanner;
+
+/**
+ * 查询客户信息界面
+ * @author Administrator
+ *
+ */
+public class InquireInformationInteerface implements IInterfaceAcceptor {
+
+	@Override
+	public void Interface() {
+		System.out.println("购物管理系统->客户管理界面->查询客户信息界面");
+		Acceptor();
+	}
+
+	@Override
+	public void Acceptor() {
+		System.out.println("请输入要查询客户信息的名字");
+		Scanner sca = new Scanner(System.in);
+		String name = sca.next();
+
+	}
+
+}

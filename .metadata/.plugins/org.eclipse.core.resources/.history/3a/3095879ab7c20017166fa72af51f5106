@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table style="width: 100%">
+		<!-- 头 -->
+		<tr>
+			<td>
+				<table style="width: 100%">
+					<tr>
+						<td style="colspan:5">
+							
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- 身 -->
+		<tr>
+			<td>
+			
+			</td>
+		</tr>
+		<!-- 尾 -->
+		<tr>
+			<td>
+			
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

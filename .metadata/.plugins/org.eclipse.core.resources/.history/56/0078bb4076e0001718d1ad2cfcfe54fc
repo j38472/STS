@@ -1,0 +1,17 @@
+package com.zgcxueyuan.myday4;
+/**
+ * 鲜花类
+ * @author Administrator
+ *
+ */
+public class Flower {
+	int id = 0 ; //id
+	int price = 0; // 价格
+	int amount = 0 ; // 数量
+	String name = null; //花名
+	String units = null;//单位（支 ， 束）
+	public String NamePriceunits (){
+		
+		return name+" "+price +"/"+units; 
+	}
+}

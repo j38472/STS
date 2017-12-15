@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link  rel="stylesheet" type="text/css" href="Main.css"/>
+<style type="text/css">
+
+
+/*设置整体*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+/*header的div*/
+.header {
+	height: 22px;
+}
+/*设置li标签里*/
+.header ul li {
+	float: left;
+	color: #fff;
+	display: inline-block;
+	width: 50px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	cursor: pointer; /*光标显示成小手型*/
+}
+/*设置登录、注册按钮*/
+.header .login {
+	float: right;
+	color: #fff;
+	line-height: 22px;
+	margin-right: 20px;
+}
+/*设置logo的div区*/
+.header .logo {
+	color: #fff;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 22px;
+	margin-left: 0px;
+	display: inline-block;
+	float: left; /*左浮动*/
+}
+
+.header ul li.first {
+	margin-left: 10px; /*设置“首页”与“原创文字”间距*/
+}
+/*设置导航添加hover事件*/
+.header ul li:hover {
+	background: red;
+}
+
+.bodys {
+	float: none;
+}
+.character {
+	position: absolute;
+	color: red;
+}
+h4{
+	color: #8D8D8D;
+}
+.small{
+	size: 2;
+}
+.center {
+	height: 100px;
+	width: 1024px;
+	text-align:center;//水平居中
+	line-height:100px;//跟高度一样
+}
+hr {
+	
+}
+</style>
+</head>
+<body>
+	<!-- 导航栏 第一行 -->
+	<div class="header">
+		<ul>
+			<li class="first"><a href="#">首页</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+		</ul>
+		<div class="login">
+			<span><a href="javascript:void(0)">登陆</a></span> <span>|</span> <span><a
+				href="首页页面.html">注册</a></span>
+		</div>
+	</div>
+	<!-- 导航栏 第 二行 -->
+	<div style="height: 50px" class="header">
+		<div class='logo'>
+			<img alt="" src="图片素材/logo.jpg">
+		</div>
+		<ul style="float: right;">
+			<li class="first"><a href="javascript:void(0)">首页</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+			<li><a href="#">原创</a></li>
+			<li><a href="#">转载</a></li>
+		</ul>
+	</div>
+	<div>
+		<!-- 主内容左 -->
+		<div style="width: 65%;float: left ;" class="bodys">
+			<div style="width: 40%;float: left;">
+				<div >
+					<img style="float: left;" alt="" src="图片素材/focus_01.jpg">
+					<img style="float: left;" alt=""src="图片素材/focus_02.jpg">
+					<img class="character" style="width:135px;top: 150px;left: 0px"alt=""src="图片素材/icon_01.png">
+					<img class="character" style="width:135px;top: 150px;left: 140px"alt=""src="图片素材/icon_01.png">
+					<p class="character" style="top: 150px">军情观察处 </p>
+					<p class="character" style="top: 150px;left: 140px">军情观察处 </p>
+				</div>
+				<div >
+					<img style="float: left;"  alt="" src="图片素材/focus_03.jpg"> 
+					<img style="float: left;" alt=""src="图片素材/focus_04.jpg">
+					<img class="character" style="width:135px;top: 250px;left: 0px"alt=""src="图片素材/icon_01.png">
+					<img class="character" style="width:135px;top: 250px;left: 140px"alt=""src="图片素材/icon_01.png">
+					<p class="character" style="top: 250px">军情观察处 </p>
+					<p class="character" style="top: 250px;left: 140px">军情观察处 </p>
+				</div>
+				<div >
+					<img style="float: left;"  alt="" src="图片素材/focus_05.jpg"> 
+					<img style="float: left;" alt=""src="图片素材/focus_06.jpg">
+					<img class="character" style="width:135px;top: 350px;left: 0px"alt=""src="图片素材/icon_01.png">
+					<img class="character" style="width:135px;top: 350px;left: 140px"alt=""src="图片素材/icon_01.png">
+					<p class="character" style="top: 350px">军情观察处 </p>
+					<p class="character" style="top: 350px;left: 140px">军情观察处 </p>
+				</div>
+			</div>
+			<div style="width: 60%;float: left;position: absolute;left: 270px" >
+				<img style="height: 302px;width:500px "  alt="" src="图片素材/focusBig.jpg">
+				<img class="character" style="width:500px;height:25px; top: 280px;left:0px"alt=""src="图片素材/icon_01.png">
+				<p class="character" style="top: 280px;left: 0px"> 今日看世界|今日看世界|今日看世界</p>
+			</div>
+			<div>
+				<img alt="" src="图片素材/icon_02.jpg">
+			</div>
+			<div style="height: 30px">
+				<div style="float: left;">
+					<img style="float: left;" alt="" src="图片素材/icon_04.jpg">
+					<h4 style="float: left;" > 访谈栏目</h4>
+				</div>
+				<div style="float: right;">
+					<p  style="float: left;" >鲁豫有约</p>
+					<p style="float: left;" >鲁豫有约</p>
+					<p style="float: left;" >鲁豫有约</p>
+					<p style="float: left;" >鲁豫有约</p>
+					<p style="float: left;" >鲁豫有约</p>
+					<p style="float: left;" >鲁豫有约</p>
+				</div>
+			</div>
+			<div>
+				<div>
+					<img  style="float: left; width: 33%;"  alt="" src="图片素材/talk_01.jpg">
+					<img  style="float: left;width: 33%;" alt="" src="图片素材/talk_02.jpg">
+					<img  style="float: left;width: 33%;" alt="" src="图片素材/talk_03.jpg">
+					<img class="character" style="width:255px;height:25px; top: 590px;left: 0px"alt=""src="图片素材/icon_01.png">
+					<img class="character" style="width:255px;height:25px;top: 590px;left: 257px"alt=""src="图片素材/icon_01.png">
+					<img class="character" style="width:255px;height:25px;top: 590px;left: 515px"alt=""src="图片素材/icon_01.png">
+					<p class="character" style="top: 590px;">港人自讲  2013-10-24</p>
+					<p class="character" style="top: 590px;left: 280px;">港人自讲  2013-10-24 </p>
+					<p class="character" style="top: 590px;left: 550px;">港人自讲  2013-10-24 </p>
+				</div>
+				<div>
+					<p style="float: left;width: 30%"> 麦秋成 兴趣当工作</p>
+					<p style="float: left;width: 30%"> 麦秋成 兴趣当工作</p>
+					<p style="float: left;width: 30%"> 麦秋成 兴趣当工作</p>
+				</div>
+			</div>
+			<div class="small">
+				<div>
+					<a style="float: left;width: 30%;"> 2013-10-23 黎瑞恩：为爱情舍弃唱</a>
+					<a style="float: left;width: 30%"> 2013-10-23 黎瑞恩：为爱情舍弃唱</a>
+					<a style="float: left;width: 30%"> 2013-10-23 黎瑞恩：为爱情舍弃唱</a>
+				</div>
+				<div>
+					<a style="float: left;width: 30%"> 2013-10-23 黎瑞恩：为爱情舍弃唱</a>
+					<a style="float: left;width: 30%"> 2013-10-23 黎瑞恩：为爱情舍弃唱</a>
+					<a style="float: left;width: 30%;size: 2;"> 2013-10-23 黎瑞恩：为爱情舍弃唱</a>
+				</div>
+			</div>
+		</div>
+		<!-- 主内容右 -->
+		<div style="width: 35%;float: right;">
+		<div> 
+			<img alt="" src="图片素材/icon_02.jpg">
+		</div>
+		<div style="height: 30px">
+			<img style="float: left;" alt="" src="图片素材/icon_04.jpg">
+			<h4 style="float: left;" > 凤凰卫视正在直播</h4>
+			<p style="size: 2;float:right;">节目单</p>
+		</div>
+		<div>
+			<div >
+				<img style="float: left;" alt="" src="图片素材/icon_05.jpg">
+			</div>
+			<div style="height: 25px">
+				<img style="float: left;" alt="" src="图片素材/icon_03.jpg">
+				<p style="float: left;" >忠王总编辑时间</p>
+				<p style="float: right  ;" >10:30-11:00</p>
+			</div>
+			<div style="height: 25px">
+				<p style="float: left;" >凤凰正在点播</p>
+				<p style="float: right;" >11:00-11:30</p>
+			</div>
+			<div style="height: 1px">
+				<hr/>
+			</div>
+			<div >
+				<img style="float: left;" alt="" src="图片素材/icon_06.jpg">
+			</div>
+			<div style="height: 25px">
+				<img style="float: left;" alt="" src="图片素材/icon_03.jpg">
+				<p style="float: left;" >忠王总编辑时间</p>
+				<p style="float: right  ;" >10:30-11:00</p>
+			</div>
+			<div style="height: 25px">
+				<p style="float: left;" >凤凰正在点播</p>
+				<p style="float: right;" >11:00-11:30</p>
+			</div>
+			<div style="height: 1px">
+				<hr/>
+			</div>
+			<div >
+				<img style="float: left;" alt="" src="图片素材/icon_07.jpg">
+			</div>
+			<div style="height: 25px">
+				<img style="float: left;" alt="" src="图片素材/icon_03.jpg">
+				<p style="float: left;" >忠王总编辑时间</p>
+				<p style="float: right  ;" >10:30-11:00</p>
+			</div>
+			<div style="height: 25px">
+				<p style="float: left;" >凤凰正在点播</p>
+				<p style="float: right;" >11:00-11:30</p>
+			</div>
+			<div style="height: 1px">
+				<hr/>
+			</div>
+	
+		</div>
+		 <div> 
+			<img alt="" src="图片素材/icon_02.jpg">
+		</div>
+		<div style="height: 25px;">
+				<h4 style="float: left;" > 凤凰动态</h4>
+		</div>
+		<div style="height: 25px;">
+			<img style="float: left;" alt="" src="图片素材/icon_11.jpg">
+			<p style="float: left;" >《与卓越同行》：吴小利对话精英</p>
+		</div>
+		<div style="height: 25px;">
+			<img style="float: left;" alt="" src="图片素材/icon_11.jpg">
+			<p style="float: left;" >《与卓越同行》：吴小利对话精英</p>
+		</div>
+		<div style="height: 25px;">
+			<img style="float: left;" alt="" src="图片素材/icon_11.jpg">
+			<p style="float: left;" >《与卓越同行》：吴小利对话精英</p>
+		</div>
+		<div> 
+			<img alt="" src="图片素材/icon_02.jpg">
+			<h4> 排行榜</h4>
+		</div>
+		<div style="height: 30px">
+			<img style="float: left;"  alt="" src="图片素材/icon_08.jpg">		
+			<p style="float: left;" >&nbsp;&nbsp;蒋介石</p>
+		</div>
+		<div  style="height: 30px">
+			<img style="float: left;"  alt="" src="图片素材/icon_09.jpg">		
+			<p style="float: left;" >&nbsp;&nbsp;蒋介石</p>
+		</div>
+		<div  style="height: 30px">
+			<img style="float: left;"  alt="" src="图片素材/icon_10.jpg">		
+			<p style="float: left;" >&nbsp;&nbsp;蒋介石</p>
+		</div>
+		<div style="position: relative;left: 15px;">
+			<ol start="4">
+				<li>追梦计划 </li>
+				<li>追梦计划</li>
+				<li>追梦计划</li>
+				<li>追梦计划</li>
+				<li>追梦计划</li>
+				<li>追梦计划</li>
+			</ol>	
+		</div>
+	</div>
+	</div>
+	<div style="width: 100%;position: absolute;top: 680px">
+		<hr align="center" width=100% size="7"  noshade="noshade"/>
+		
+	</div>
+		<div style="width: 100%;position: absolute;top: 690px">
+		<hr align="center" width=100% size="2" color="red" noshade="noshade"/>
+	</div>
+	<div style="position: absolute;top: 692px;">
+		<div class="center">
+			凤凰媒体介绍 凤凰媒体介绍凤凰媒体介绍凤凰媒体介绍凤凰媒体介绍凤凰媒体介绍凤凰媒体介绍<br/>
+		</div>
+			版权<br/>
+			@2013
+		
+	</div>
+</body>
+</html>

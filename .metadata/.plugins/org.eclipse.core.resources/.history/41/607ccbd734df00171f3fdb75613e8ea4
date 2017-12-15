@@ -1,0 +1,6 @@
+package com.zgcxueyuan.myday3;
+
+public class Student {
+	public int id;
+	public String name;
+}

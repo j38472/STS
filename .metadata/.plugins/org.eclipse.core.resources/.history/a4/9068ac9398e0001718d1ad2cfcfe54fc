@@ -1,0 +1,15 @@
+package com.zgcxueyuan.day3;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CroupierTest {
+
+	@Test
+	public void test() {
+		Croupier  c = new Croupier();
+		c.deal();
+	}
+
+}

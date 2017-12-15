@@ -1,0 +1,21 @@
+package com.zgcxueyuan.free;
+
+import java.text.ParseException;
+
+public class MainDemo {
+	public static void main(String[] args) {
+		DateUtil du ;
+		try {
+			du = new DateUtil("2019-11-12");
+			du.addYear(2);
+			System.out.println(du.getMonth());
+			du.addDay(29);
+			System.out.println(du.getDay());
+			System.out.println(du.getMonth());
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

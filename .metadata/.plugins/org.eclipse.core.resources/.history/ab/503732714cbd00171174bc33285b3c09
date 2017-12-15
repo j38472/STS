@@ -1,0 +1,12 @@
+package com.zgcxueyuan.register;
+
+public class Register {
+	public static void main(String[] args) {
+		System.out.println("欢	迎使用ZOL购物管理系统1.0版/r/n"
+				+ "/r**************/n****************"
+				+"\r\n1.登录系统"
+				+ "/r/n2.更改管理员密码"
+				+ "/r/n3.退出"
+				+ "/r/n*********************************");
+	}
+}

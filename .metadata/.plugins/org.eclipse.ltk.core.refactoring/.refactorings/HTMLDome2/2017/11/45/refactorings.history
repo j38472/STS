@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HTMLDome2/WebContent/Dome/03 提供给学员的上机练习素材/练习1：网易邮箱登录页面/网易邮箱登录界面.html&apos; to &apos;网易邮箱登录界面div.html&apos;" description="Rename resource &apos;网易邮箱登录界面.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Dome/03 提供给学员的上机练习素材/练习1：网易邮箱登录页面/网易邮箱登录界面.html" name="网易邮箱登录界面div.html" stamp="1509946536024" updateReferences="true"/>
+</session>

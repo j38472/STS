@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0px;
+	padding:0px;
+}
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif, "宋体";
+	line-height:20px;
+	font-size:12px;
+}
+li {
+	list-style:none;
+}
+a img {
+	border:0px;
+}
+a {
+	text-decoration:none;
+	color:#2b62a5;
+}
+a:hover {
+	text-decoration:underline;
+}
+#container, #footer, #header {
+	width:1000px;
+	margin:0px auto;
+	overflow:hidden;
+	clear:both;
+}
+/*页面顶部样式*/
+#header {
+	height:50px;
+	background:url(../images/menuBg.jpg) repeat-x;
+}
+#menu {
+	float:right;
+	color:#dbb9b9;
+	padding:15px 30px 0px 0px;
+}
+#menu a, #menu a:hover {
+	color:#ffffff;
+	padding:0px 5px;
+}
+/*网页游戏页面样式*/	
+#gameLogo {
+	float:left;
+	padding-top:5px;
+}
+.gameIndex {
+	background:url(../images/btn-01.gif) 0px 0px no-repeat;
+	width:100px;
+	height:40px;
+	text-align:center;
+	float:left;
+	position:relative;
+	left:20px;
+	top:10px;
+}
+.gameIndex a, .gameIndex a:hover {
+	font-size:14px;
+	color:#cb3333;
+	text-decoration:none;
+	font-weight:bold;
+	line-height:40px;
+}
+.gameLeft {
+	float:left;
+	width:724px;
+	overflow:hidden;
+}
+.gameNav {
+	float:left;
+	border:1px #cccccc solid;
+	height:230px;
+	overflow:hidden;
+	width:190px;
+}
+.gameNav li {
+	background:url(../images/gameBg1.jpg) 0px 0px no-repeat;
+	height:29px;
+	line-height:30px;
+}
+.gameNav li img {
+	padding:0px 10px 0px 8px;
+	vertical-align:middle;
+}
+.gameNav li a {
+	color:#000000;
+	display:block;
+	width:190px;
+	height:27px;
+	padding-top:2px;
+}
+.gameNav li a:hover {
+	color:#fff;
+	text-decoration:none;
+	background:url(../images/gameBg2.jpg);
+}
+.gameAdver {
+	float:right;
+	border:1px #cccccc solid;
+	height:230px;
+	overflow:hidden;
+	width:520px;
+	text-align:center;
+	vertical-align:middle;
+}
+.allGame {
+	padding:25px;
+	border-bottom:1px #cccccc solid;
+	clear:both;
+	width:672px;
+	overflow:hidden;
+}
+.allGame dt, .allGame dd {
+	width:320px;
+	height:155px;
+	overflow:hidden;
+	border:1px #cccccc solid;
+}
+.allGame dt {
+	float:left;
+}
+.allGame dd {
+	float:right;
+}
+.allGame h1 a {
+	font-size:14px;
+	color:#a70a0a;
+	line-height:30px;
+}
+.allGame .titleImg {
+	float:left;
+	padding:5px;
+}
+.allGame span {
+	color:#a70a0a;
+}
+.role {
+	width:680px;
+	overflow:hidden;
+	clear:both;
+	margin:15px auto 0px auto;
+}
+.role li {
+	float:left;
+	width:170px;
+	text-align:center;
+	height:190px;
+	overflow:hidden;
+}
+.role h1 {
+	font-size:14px;
+	line-height:30px;
+	text-align:center;
+}
+.role h1 a, .role h1 a:hover {
+	color:#a70a0a;
+}
+.role p span {
+	color:#a70a0a;
+}
+.gameRight {
+	float:right;
+	width:262px;
+	overflow:hidden;
+}
+.gameLogin {
+	border:1px #cccccc solid;
+	height:230px;
+	overflow:hidden;
+	background-color:#f3f3f3;
+}
+.gameLogin h1 {
+	color:#767373;
+	font-size:14px;
+	padding:20px 0px 25px 20px;
+}
+.gameLogin li {
+	padding-left:20px;
+	height:35px;
+	font-size:14px;
+}
+.gameLogin li input {
+	border:1px #cccccc solid;
+	width:150px;
+	height:20px;
+}
+.gameLogin dt {
+	float:left;
+	padding-left:65px;
+	padding-top:10px;
+}
+.gameLogin dd {
+	float:left;
+	padding-left:30px;
+}
+.gameLogin .login {
+	background:url(../images/btnLogin.jpg) 0px 0px no-repeat;
+	width:63px;
+	height:24px;
+	cursor:pointer;
+	border:0px;
+}
+.gameBorder {
+	border:1px #cccccc solid;
+}
+.gameTitle {
+	background:url(../images/titleBg.jpg) 0px 0px repeat-x;
+	height:28px;
+	overflow:hidden;
+	clear:both;
+}
+.gameTitle dt {
+	font-size:14px;
+	font-weight:bold;
+	color:#7d0808;
+	padding-left:10px;
+	padding-right:30px;
+	line-height:28px;
+	float:left;
+}
+.gameTitle dd {
+	float:left;
+	color:#cccccc;
+	padding:0px 5px;
+	line-height:28px;
+}
+.gameTitle dd a {
+	text-decoration:underline;
+	color:#666666;
+	font-size:14px;
+}
+.news {
+	width:95%;
+	margin:0px auto;
+}
+.news li {
+	border-bottom:1px #cccccc dashed;
+	height:27px;
+	background:url(../images/btn-04.gif) 2px 5px no-repeat;
+	padding-left:45px;
+	line-height:27px;
+}
+.news .noBorder {
+	border-bottom:0px;
+}
+.news li a {
+	color:#4d4646;
+}
+.gameVideo {
+	width:95%;
+	margin:0px auto;
+	line-height:26px;
+}
+.gameVideo dt {
+	border-bottom:1px #cccccc dashed;
+	clear:both;
+	width:100%;
+	overflow:hidden;
+	padding:10px 0px;
+}
+.gameVideo dd {
+	clear:both;
+	width:100%;
+	overflow:hidden;
+	padding:10px 0px;
+}
+.gameVideo img {
+	padding:0px 10px 0px 0px;
+	float:left;
+}
+.clear {
+	height:10px;
+	clear:both;
+	overflow:hidden;
+}
+/*页面底部样式*/
+#footer {
+	padding:15px 0px;
+	clear:both;
+	text-align:right;
+	color:#666666;
+}
+#footer a {
+	padding-right:15px;
+	float:left;
+}
+.footerBorder-top {
+	border-top:1px #cccccc solid;
+}

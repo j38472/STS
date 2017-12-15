@@ -1,0 +1,15 @@
+package com.zgcxueyuan.day2;
+/**
+ * 模拟堆栈 ，
+ * @author Administrator
+ *
+ */
+public class LinkListDemo {
+
+}
+/*
+ * 模拟 队列
+ */
+class queue{
+	
+}

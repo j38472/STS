@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/com/wxws/sms/data/Customer.java=GBK
+encoding//src/com/wxws/sms/data/Data.java=GBK
+encoding//src/com/wxws/sms/data/Gift.java=GBK
+encoding//src/com/wxws/sms/data/Goods.java=GBK
+encoding//src/com/wxws/sms/data/Manager.java=GBK
+encoding//src/com/wxws/sms/management/CustManagement.java=GBK
+encoding//src/com/wxws/sms/management/GiftManagement.java=GBK
+encoding//src/com/wxws/sms/management/Menu.java=GBK
+encoding//src/com/wxws/sms/management/Pay.java=GBK
+encoding//src/com/wxws/sms/management/StartSMS.java=GBK
+encoding//src/com/wxws/sms/management/VerifyEqual.java=GBK
+encoding/<project>=UTF-8

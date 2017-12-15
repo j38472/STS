@@ -1,0 +1,35 @@
+package com.zgcxueyuan.free;
+
+public class A222222222222222222 {
+	/**
+	 * 花店类
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+	}
+	private int []  flower = new int [3]; // 鲜花
+	int price= 0 ;
+    
+	public int[] getFlower() {
+		return flower;
+	}
+
+	public void setFlower(int[] flower) {
+		this.flower = flower;
+	}
+
+	/**
+	 * 提供库存总价格的方法
+	 */
+	public void int totalPrice (){
+		A111111111111111 a = new A111111111111111();
+		for (int i = 0; i < flower.length-1; i++) {
+			price=flower[i]*a.getPrice();
+		}
+		return price;
+    }
+	
+	
+
+}

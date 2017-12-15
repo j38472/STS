@@ -1,0 +1,144 @@
+package chenyuanhao_b;
+
+/**
+ * 编写一个StudentList类，封装一个Student（Student 类 成员 int id String name）数组 默认长度16。
+ * 实例化时可以指定长度也可以不指定长度而使用默认值 长度不够时不要求扩容，可不处理。 实现下列功能
+ * 
+ * 添加元素 add(Student s) （10分） 删除元素 remove(int index) remove( Student s)(学生id、
+ * 姓名相同 视为同一个学生对象） （10+10分） 插入元素 insert(int index,Student s) 在index 位置插入元素 （10分）
+ * 获取学生 getStudent(int index) getStudent(String name) （5+5分） 获取学生数 length() （5分）
+ * 获取容量 capacity() （5分） toString（） 方法 输出字符串格式[{1,张三},{2，李四},....] （10分） 排序
+ * sort（） 返回一个按学生姓名升序排列的学生对象数组(排序方法不限）（15分）
+ * 
+ * 
+ * 
+ * @author Administrator
+ *
+ */
+public class StudentList {
+	private int lengths = 16;
+		int count = 0 ;
+	public StudentList() {// 显示默认构造
+
+	}
+
+	public StudentList(int lengths) {// 显示可以指定长度的构造
+		this.lengths = lengths;
+	}
+
+	// 封装长度默认为16的Student类对象
+	public Student[] students = new Student[lengths];
+
+	// 添加元素 add(Student s)
+	public void add(Student s) {
+	
+		students[count++]=s;
+	}
+
+	// 删除元素 remove(int index) (学生id、 * 姓名相同 视为同一个学生对象）
+	public void remove(int index) {// remove 根据坐标删除方法
+		Student stu = new Student(0, "");
+		students[index] = stu;
+		position(index);
+	}
+
+	// 删除元素remove( Student s)
+	public void remove(Student s) {// remove 根据类对象删除方法
+		int i = 0;
+		for (; i < lengths - 1; i++) {
+			if (students[i].getId() == s.getId() && students[i].getName() == s.getName()) {
+				Student stu = new Student(0, "");
+				students[i] = stu;
+			}
+		}
+		position(i);
+	}
+
+	// 补空索引方法
+	private void position(int index) {
+		while (students[index + 1] != null) {// 判断已空索引+1是否为空
+			students[index]=students[index + 1];
+			index++;
+		}
+		students[index]=null;
+	}
+
+	// 插入元素 insert(int index,Student s) 在index 位置插入元素
+	public void insert(int index, Student s) {
+		if (students[index] == null) {// 判断将插入索引处是否为空 如果该索引为空
+			students[index]=s;
+		} else {// 如果该索引不为空
+			empty(index);// 调用腾空该索引的方法
+			students[index]=s;
+		}
+	}
+
+	// 腾空该索引的方法
+	private void empty(int index) {
+		for (int i = lengths - 1; i >= index; i--) {
+			if (students[i]!=null) {
+				students[i+1]=new Student(0, "");
+				students[i+1]=students[i];
+			}
+		}
+	}
+
+	// 获取学生 getStudent(int index) 根据索引获取
+	public Student getStudent(int index) {
+		return students[index];
+	}
+
+	// 获取学生getStudent(String name) 根据name属性获取学生
+	public Student getStudent(String name) {
+		int i = 0;
+		for (; i < lengths - 1; i++) {
+			if (students[i].getName().equals(name))// 如果找到该索引的学生停止 并记录了该索引
+				break;
+		}
+		return students[i];
+	}
+
+	// 获取学生数 length()
+	public int length() {
+		int i = 0;
+		for (; i < lengths - 1; i++) {
+			if (students[i] == null) // 找到为空的坐标 用i记录其长度 因为长度比索引大1所以 该记录的值就是其长度
+				break;
+		}
+		return i;
+	}
+
+	// 获取容量 capacity()
+	public int capacity() {
+		return lengths;
+	}
+
+	// toString（） 方法 输出字符串格式[{1,张三},{2，李四},....]
+	public String toString() {
+		StringBuilder stu = new StringBuilder("[");// 创建字符串缓冲区初始化为[
+		for (int i = 0; i < lengths - 1; i++) {
+			if (students[i] != null) {// 如果当前索引不为空时向字符串缓冲区装字符
+				stu.append("{" + students[i].getId() + "," + students[i].getName() + "},");
+			}
+		}
+		stu.replace(stu.length() - 1, stu.length(), "]");// 如果是最后一位的话将其替换为]
+		return stu.toString();// 将字符串缓冲区转换为字符串 并且返回该字符串
+	}
+
+	// 排序 * sort（） 返回一个按学生姓名升序排列的学生对象数组(排序方法不限）
+	public void sort() {
+		Student stu = new Student(0, "");
+		for (int i = 0; i < lengths - 1; i++) {
+			for (int j = i + 1; j < students.length - 1; j++) {
+				if (students[i].getName().compareTo(students[j].getName()) < 0) {// compareTo返回前一个字符串减去后一个字符串的差
+																					// 负数（则小于后一个字符串）
+					stu = students[j];
+					students[j]=students[i];
+					students[i]=stu;
+				}
+			}
+		}
+
+	}
+
+}

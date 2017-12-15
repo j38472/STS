@@ -1,0 +1,40 @@
+package com.zgcxueyuan.bxd;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class CopyTextByBuf {
+	public static void main(String[] args) {
+		BufferedReader bufr = null;
+		BufferedWriter bufw = null;
+		try {
+			bufr = new BufferedReader(new FileReader("E:\\demoBuf.txt"));
+			bufw = new BufferedWriter(new FileWriter("F:\\demoBuf.txt"));
+			String line = null;
+			while ((line = bufr.readLine()) != null) {
+				bufw.write(line);
+				bufw.newLine();
+				bufw.flush();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		} finally {
+			try {
+				if (bufr != null)
+					bufr.close();
+				bufw.close();
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+			try {
+				if (bufw != null)
+					bufw.close();
+				bufw.close();
+			} catch (Exception e2) {
+				throw new RuntimeException("¹Ø±ÕÐ´ÈëÁ÷Ê§°Ü");
+			}
+		}
+	}
+}

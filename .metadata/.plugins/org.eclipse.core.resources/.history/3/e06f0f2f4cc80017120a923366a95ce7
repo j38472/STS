@@ -1,0 +1,21 @@
+package com.zgcxueyuan.iodome;
+
+import java.io.*;
+public class FileReaderDemo {
+	public static void main(String[] args) {
+		int str  = (Integer) null;
+		FileReader fr =null;
+	try {
+			//创建一个文件读取流对象，和指定名称的文件相关联
+			//要保证文件已经存在，如果不存在会发生异常FileNotFoundException
+			fr =new FileReader("E\\demo.txt");
+			//调用读取流对象的read方法
+			 str  = fr.read();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			fr.close();
+		}
+		System.out.println("str="+str);
+	}
+}

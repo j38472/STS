@@ -1,0 +1,33 @@
+package com.zgcxueyuan.myday5;
+
+import java.util.*;
+
+/**
+ * "aabcdasdbcsdasdcbasdbcsa"
+ * 输出相同字母有多少个
+ * @author Administrator
+ *
+ */
+public class TreeMapDemo implements Comparator<Character>{
+	public static void main(String[] args) {
+		TreeMap<Integer,Character> tm = new TreeMap<>();
+		String str = "aabcdasdbcsdasdcbasdbcsa";
+		for (int i = 0; i < args.length; i++) {
+			tm.put(i, str.charAt(i));
+		}
+		
+	}
+
+	@Override
+	public int compare(Character o1, Character o2) {
+		// TODO Auto-generated method stub
+		if (o1==o2) 
+			return -1;
+		return o1.compareTo(o2);
+	}
+	private void sop(TreeMap<Integer,Character> tm) {
+		for (int i = 0; tm.isEmpty(); i++) {
+			System.out.print(tm.get(i));
+		}
+	}
+}

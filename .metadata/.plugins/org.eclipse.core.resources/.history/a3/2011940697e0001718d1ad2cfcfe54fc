@@ -1,0 +1,33 @@
+package com.zgcxueyuan.day3;
+
+/**
+ * 
+ * @author Administrator
+ *
+ */
+public class Poker {
+	private String flowerType = null;// 花型只能有四种 ： 方块 梅花 红心 黑桃
+	private int code = 0; // 扑克上面的数字
+
+	public Poker(String flowerType, int numerical) {
+		this.flowerType = flowerType;
+		this.code = numerical;
+	}
+
+	public String getFlowerType() {
+		return flowerType;
+	}
+
+	public void setFlowerType(String flowerType) {
+		this.flowerType = flowerType;
+	}
+
+	public int getNumerical() {
+		return code;
+	}
+
+	public void setNumerical(int numerical) {
+		this.code = numerical;
+	}
+
+}

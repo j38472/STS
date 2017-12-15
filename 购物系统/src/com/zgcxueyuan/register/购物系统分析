@@ -1,0 +1,60 @@
+2017：
+	10_30 16:40:一次创建
+	11_10 10:50:二次补充
+	12.4 14:19 :三次补充
+	12.5 17:25 :四次补充
+主方法           方法：           MainInterface
+0{
+	1：	登录界面   RegisterSystem———>RegisterSystemInterface
+		{
+			 1:客户信息管理界面
+			 {
+			 	1.显示客户所有信息
+			 		DemandInterface
+				2.添加客户信息
+					AddInformationInterface
+				3.修改客户信息
+					AlterInformationInteerface
+				4.查询客户信息
+					InquireInformationInteerface
+				0.返回上一级界面
+			 }
+			 2:购物结算界面ShopSettlement
+			 {
+			 	{
+			 		购物
+			 		结算
+			 	}
+			 	0.返回上一级
+			 	
+			 }
+			 3:真情回馈界面
+			 4:注销界面
+			 0:返回上一级
+		}
+	2：   	更改管理员密码 ModificationAdministratorPassword
+	3:  退出方式 
+}
+1{
+	1：	客户管理界面
+	2：  	显示所有客户信息
+	3：  	添加客户信息
+	4： 	修改客户信息
+	4： 	查询客户信息
+}
+2{
+	0：	购物结算页面
+}
+3{
+	0：	主页面
+	1:	幸运大放送
+	2:	幸运抽奖
+	3:	生日问候
+}
+4{
+	0:注销界面(注销账号）
+	
+}
+5{
+退出方法
+}

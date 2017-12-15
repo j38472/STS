@@ -1,0 +1,103 @@
+package com.zgcxueyuan.register;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+ * 修改客户信息界面
+ * 
+ * @author Administrator
+ *
+ */
+public class AlterInformationInteerface implements IInterfaceAcceptor {
+
+	@Override
+	public void Interface() {
+		System.out.println("购物管理系统->客户管理界面->修改客户信息界面");
+		Acceptor();
+	}
+
+	@Override
+	public void Acceptor() throws IOException {
+		System.out.println("请问想修改那一部分（1（客户名称）2（生日日期）3（积分）0（返回上一级））");
+		Scanner sca = new Scanner(System.in);
+		int key = sca.nextInt();
+		switch (key) {
+		case 1:
+			setName();
+			break;
+		case 2:
+			setBirthday();
+			break;
+		case 3:
+			setIntegral();
+			break;
+		case 0:
+			CustomerManagementInterface cmi = new CustomerManagementInterface();
+			cmi.Interface();
+			break;
+		default:
+			sca.close();
+			break;
+		}
+	}
+
+	/**
+	 * 修改名字
+	 * @throws IOException 
+	 */
+	private void setName() throws IOException {
+		System.out.println("请依次输入客户生日与积分(生日与积分之间用逗号分割)及要改变的客户名称");
+		Scanner sca = new Scanner(System.in);
+		String birthdayIntegral = sca.next();
+		String name = sca.next();
+		
+		FileReader fr = new FileReader("clientInformation.txt");
+		BufferedReader bf = new BufferedReader(fr);
+		String lines [] = new String [lineNumber()];
+		for (int i = 0; i < lines.length; i++) {
+			lines[i]=bf.readLine();
+		}
+		for (int i = 0; i < lines.length; i++) {
+			for (int j = 0; j < lines[i].length(); j++) {
+				if (lines[i].charAt(j)==',') {
+					if (lines[i][j]=='a') {
+						
+					}
+				}
+			}
+		}
+		
+		fr.close();
+		
+		
+		sca.close();
+	}
+	/**
+	 * 修改生日
+	 */
+	private void setBirthday() {
+
+	}
+	/**
+	 * 修改积分
+	 */
+	private void setIntegral() {
+
+	}
+	private int lineNumber() throws IOException{
+		FileReader fr = new FileReader("clientInformation.txt");
+		BufferedReader bf = new BufferedReader(fr);
+		int line = 0 ;
+		while (bf.readLine()!=null) {
+			line++;
+		}
+		fr.close();
+		return line;
+	}
+
+}

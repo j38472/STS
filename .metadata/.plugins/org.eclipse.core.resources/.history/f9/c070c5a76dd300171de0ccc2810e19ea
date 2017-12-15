@@ -1,0 +1,43 @@
+package com.zgcxueyuan.free;
+
+public class A111111111111111 {
+
+	/**
+	 *  鲜花类
+	 * @param args
+	 */
+	 public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	private		String name;
+	 private	int price;
+	 private	int number;
+		
+	/**
+	 * 返回字符串方法 格式为  化名 价格元/个数
+	 */
+	private String sun() {
+		return getName() +":"+getPrice()+"元/"+getNumber()+"个";
+	}
+
+}
