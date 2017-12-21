@@ -1,0 +1,21 @@
+package com.zgcxueyuan.bxd2;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+
+/**
+ * ·¢ËÍ¶Ë
+ * @author Administrator
+ *
+ */
+public class UdpSend {
+	public static void main(String[] args) throws Exception {
+		byte buf [] = "hahaha".getBytes();
+		DatagramPacket dp = new DatagramPacket(buf, buf.length,InetAddress.getByName("192.168.8.100"),1000);
+		DatagramSocket ds = new DatagramSocket();
+		ds.receive(dp);
+		ds.close();
+	}
+
+}

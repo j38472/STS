@@ -1,0 +1,27 @@
+package com.zgcxueyuan.bxd2;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+
+/**
+ * 接受端
+ * 
+ * @author Administrator
+ *
+ */
+public class UdpRece {
+	public static void main(String[] args) throws Exception {
+		DatagramSocket ds = new DatagramSocket(10001);//监听端口1000
+		while (true) {//多次接受
+			byte[] buf = new byte[1024];//接受缓冲区
+			DatagramPacket dp = new DatagramPacket(buf, buf.length);//接受数据长度
+			ds.receive(dp);//收包
+			String ip = dp.getAddress().getHostAddress();
+			String data = new String(dp.getData(), 0, dp.getLength());
+			int port = dp.getPort();
+			System.out.println(ip + "::" + data + "::" + port);
+		}
+		
+
+	}
+}

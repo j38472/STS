@@ -1,0 +1,12 @@
+package com.zgcxueyuan.bxd2;
+/**
+ * ·¢ËÍ¶Ë
+ * @author Administrator
+ *
+ */
+public class UdpSend {
+	public static void main(String[] args) {
+
+	}
+
+}

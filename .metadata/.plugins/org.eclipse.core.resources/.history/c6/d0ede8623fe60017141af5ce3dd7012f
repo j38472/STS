@@ -1,0 +1,20 @@
+package com.zgcxueyuan.bxd2;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+
+/**
+ * ·¢ËÍ¶Ë
+ * @author Administrator
+ *
+ */
+public class UdpSend {
+	public static void main(String[] args) {
+		byte buf [] = "hahaha".getBytes();
+		DatagramPacket dp = new DatagramPacket(buf, buf.length);
+		DatagramSocket ds = new DatagramSocket();
+		ds.receive(dp);
+		ds.close();
+	}
+
+}

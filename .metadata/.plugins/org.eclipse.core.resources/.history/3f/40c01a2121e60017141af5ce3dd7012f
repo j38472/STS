@@ -1,0 +1,16 @@
+package com.zgcxueyuan.bxd;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class IPDemo {
+	public static void main(String[] args) throws UnknownHostException {
+//		 InetAddress i = InetAddress.getLocalHost();
+//		 System.out.println(i.hashCode());
+		for (int i = 0; i < 1000; i++) {
+			InetAddress ia = InetAddress.getByName("www.baidu.com");
+			System.out.println(ia.getCanonicalHostName());
+		}
+		
+	}
+}

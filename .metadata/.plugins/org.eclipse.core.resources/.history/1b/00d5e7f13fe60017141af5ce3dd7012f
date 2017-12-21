@@ -1,0 +1,18 @@
+package com.zgcxueyuan.bxd2;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+/**
+ * Ω” ‹∂À
+ * @author Administrator
+ *
+ */
+public class UdpRece {
+	public static void main(String[] args) throws Exception {
+		byte [] buf = new byte [1024];
+		DatagramSocket ds = new DatagramSocket();
+		
+	}
+}

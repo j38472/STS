@@ -1,0 +1,11 @@
+package com.zgcxueyuan.bxd2;
+/**
+ * ·¢ËÍ¶Ë
+ * @author Administrator
+ *
+ */
+public class UdpRece {
+	public static void main(String[] args) {
+		
+	}
+}

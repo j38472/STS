@@ -1,0 +1,15 @@
+package com.zgcxueyuan.bxd2;
+
+import java.net.DatagramPacket;
+
+/**
+ * ·¢ËÍ¶Ë
+ * @author Administrator
+ *
+ */
+public class UdpRece {
+	public static void main(String[] args) {
+		byte buf [] = "hahaha".getBytes();
+		DatagramPacket dp = new DatagramPacket(buf, buf.length);
+	}
+}
