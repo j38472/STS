@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#div1 {
+	width: 200px;
+	height: 100px;
+	background: #ccc;
+	border: 1px solid #999;
+	display: block;
+}
+
+#div2 {
+	width: 140px;
+	height: 130px;
+	background: red;
+}
+</style>
+
+<script type="text/javascript">
+	function toOnclick() {
+		var divTwo = document.getElementById('div2');
+		divTwo.style.background='#123456';
+		divTwo.style.height='500px';
+		2Div.style.width='300px';
+	}
+	function toOnmouseover() {
+		var 2Div = document.getElementById('div2');
+		2Div.style.background='#456789';
+		2Div.style.height='600px';
+		2Div.style.width='400px';
+	}
+	function toOnmouseout() {
+		var 2Div = document.getElementById('div2');
+		2Div.style.background='#987654';
+		2Div.style.height='700px';
+		2Div.style.width='500px';
+	}
+</script>
+
+</head>
+<body>
+	<input type="button" value="onclick按钮"
+		onclick="div1.style.display='none';" />
+	<input type="button" value="onmouseover按钮"
+		onmouseover="div1.style.display='block';" />
+	<input type="button" value="onmouseout按钮"
+		onmouseout="div1.style.width='500px';" />
+	<div id="div1">div1</div>
+	<br />
+	<br />
+	<hr />
+	<div id="div2" onclick="toOnclick()" onmouseout="toOnmouseout()" onmouseover="toOnmouseover()">div2</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link id="skin1" rel="stylesheet" type="text/css" href="网页换肤皮肤1.css">
+<link id="skin2" rel="stylesheet" type="text/css" href="网页换肤皮肤2.css">
+<script type="text/javascript">
+	function skin1() {
+		
+	}
+	function skin2() {
+	}
+</script>
+ 
+</head>
+<body>
+	<input type="button" value="网页换肤1" onclick="skin1()" />
+	<input type="button" value="网页换肤1" onclick="skin2()" />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

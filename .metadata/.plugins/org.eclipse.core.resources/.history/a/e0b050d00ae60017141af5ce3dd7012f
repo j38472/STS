@@ -1,0 +1,15 @@
+package com.zgcxueyuan.text;
+/**
+ * 员工类
+ *  普通员工奖金=工资50% *出勤率 ； 经
+ * @author Administrator
+ *
+ */
+public class Staff extends Employee {
+	 int attendanceRate;//考勤 1-100
+	 public Staff(String name, int id, double salary,int attendanceRate) {
+		super(name,id,salary);
+		this.attendanceRate=attendanceRate;
+		super.bonus=(double)((salary/2)*(attendanceRate/100));
+	}
+}

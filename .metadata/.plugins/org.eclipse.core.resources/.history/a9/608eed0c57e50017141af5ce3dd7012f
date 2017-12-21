@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="button" value="显示隐藏" onclick="showHide()" />
+<div id = "div1">
+	dasdasdsadasdsadasd
+</div>
+</body>
+</html>

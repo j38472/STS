@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+	
+body{
+	background: black;
+	input{
+		width:300px;
+		height:400px;
+		background:yellow;
+	}
+}

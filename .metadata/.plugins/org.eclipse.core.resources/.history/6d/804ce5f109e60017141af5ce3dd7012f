@@ -1,0 +1,13 @@
+package com.zgcxueyuan.text;
+/**
+ * 经理类
+ * @author Administrator
+ *
+ */
+public class Manager extends Employee {
+	double KPI;//部门绩效（KPI 值1~10的小数）
+	public Manager(String name, int id, double salary,double KPI) {
+		super(name,id,salary);
+		this.KPI=KPI;
+	}
+}

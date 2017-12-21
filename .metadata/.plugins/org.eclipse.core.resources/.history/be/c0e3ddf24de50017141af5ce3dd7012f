@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+body{
+	background: aqua;
+	input{
+		width:150px;
+		height:200px;
+		background:fuchsia;
+	}
+}

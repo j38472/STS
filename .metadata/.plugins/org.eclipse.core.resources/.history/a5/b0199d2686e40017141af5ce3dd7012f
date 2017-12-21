@@ -1,0 +1,37 @@
+package com.zgcxueyuan.bxd;
+
+import java.io.FileReader;
+
+/**
+ * Ä£ÄâBufferedReader
+ * 
+ * @author Administrator
+ *
+ */
+public class MyBufferedReader {
+
+	private FileReader r;
+
+	MyBufferedReader(FileReader r) {
+		this.r = r;
+	}
+
+	public String MyReadLine() {
+		StringBuilder sb = new StringBuilder();
+		int ch = 0;
+		while ((ch = r.read()) != -1) {
+			if (ch == "\r") {
+				continue;
+			}
+			if (ch == "\n") {
+				return sb.toString();
+			} else {
+				sb.append((char) ch);
+			}
+
+		}
+
+		return null;
+
+	}
+}

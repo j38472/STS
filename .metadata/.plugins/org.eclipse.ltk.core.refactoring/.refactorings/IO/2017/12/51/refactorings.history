@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.zgcxueyuan.递归.Demo&apos; to &apos;MyDemo&apos;&#x0D;&#x0A;- Original project: &apos;IO&apos;&#x0D;&#x0A;- Original element: &apos;com.zgcxueyuan.递归.Demo&apos;&#x0D;&#x0A;- Renamed element: &apos;com.zgcxueyuan.递归.MyDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Demo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.zgcxueyuan.递归{Demo.java[Demo" matchStrategy="1" name="MyDemo" qualified="false" references="true" similarDeclarations="false" stamp="1513823821791" textual="false" version="1.0"/>
+</session>

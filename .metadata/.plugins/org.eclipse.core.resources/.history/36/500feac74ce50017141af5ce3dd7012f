@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function one( var i) {
+		if (i==1){
+			var hrefs = "网页换肤皮肤1.css";
+		}else if (i==2) {
+			var hrefs = "网页换肤皮肤2.css";
+		}
+		  <link rel="stylesheet" type="text/css" href=hrefs>
+	}
+</script>
+ 
+</head>
+<body>
+	<input type="button" value="网页换肤1" onclick="one()" />
+	<input type="button" value="网页换肤1" onclick="one()" />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

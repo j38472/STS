@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link id="skins" rel="stylesheet" type="text/css" href="网页换肤皮肤1.css" />
+<script type="text/javascript">
+	function skin1() {
+		var ol =document.getElementById('skins');
+		ol.href="网页换肤皮肤1.css";
+	}
+	function skin2() {
+		var ol = document.getElementById('skins');
+		ol.href="网页换肤皮肤2.css";
+	}
+</script>
+ 
+</head>
+<body>
+	<input type="button" value="网页换肤1" onclick="skin1()" />
+	<input type="button" value="网页换肤2" onclick="skin2()" />
+	<kbd>
+		<input type="button" value="" />
+	</kbd>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

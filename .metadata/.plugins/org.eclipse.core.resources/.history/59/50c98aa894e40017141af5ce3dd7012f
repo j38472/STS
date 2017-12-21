@@ -1,0 +1,28 @@
+package com.zgcxueyuan.lsm;
+
+import java.io.File;
+
+public class FileDemo {
+
+	public static void main(String[] args) {
+		long statd =  System.currentTimeMillis();
+		demo("f:\\");
+		long end =  System.currentTimeMillis();
+		System.out.println(end-statd);
+		
+	}
+
+	public static void demo(String path){
+		File dir = new  File(path);
+		File [] files = dir.listFiles();
+		for (File f : files) {
+//			System.out.println(f.getName());
+			if (f.isDirectory()) {
+				demo(f.getPath());
+			}
+		}
+		
+	}
+
+
+}

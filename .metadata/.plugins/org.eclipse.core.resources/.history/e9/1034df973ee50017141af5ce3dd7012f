@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#div1 {
+	width: 200px;
+	height: 100px;
+	background: #ccc;
+	border: 1px solid #999;
+	display: none;
+}
+</style>
+
+</head>
+<body>
+		<!-- 
+		
+		 -->
+	<input type="button" value="onclick按钮" onclick="div1.style.display='none'" />
+	<input type="button" value="onmouseover按钮" onmouseover="div1.style.display='block'" />
+	<input type="button" value="onmouseout按钮" onmouseout="alert('onmouseout按钮')" />
+	<div id="div1">
+		132456789
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
