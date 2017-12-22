@@ -1,0 +1,25 @@
+package com.zgcxueyuan.bxd3;
+
+import java.io.*;
+import java.net.*;
+
+/**
+ * สี
+ * 
+ * @author Administrator
+ *
+ */
+public class Rece implements Runnable {
+	private DatagramSocket ds;
+
+	private void Send(DatagramSocket ds) {
+		this.ds = ds;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

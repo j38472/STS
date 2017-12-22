@@ -1,0 +1,22 @@
+package com.zgcxueyuan.bxd3;
+
+import java.io.*;
+import java.net.*;
+
+/**
+ * ·¢
+ * 
+ * @author Administrator
+ *
+ */
+public class Send implements Runnable {
+	private DatagramSocket ds;
+
+	private Send(DatagramSocket ds) {
+		this.ds = ds;
+	}
+
+	public void run() {
+
+	}
+}

@@ -1,0 +1,28 @@
+package com.zgcxueyuan.bxd3;
+
+import java.io.*;
+import java.net.*;
+
+/**
+ * ·¢
+ * 
+ * @author Administrator
+ *
+ */
+public class Send implements Runnable {
+	private DatagramSocket ds;
+
+	private Send(DatagramSocket ds) {
+		this.ds = ds;
+	}
+
+	@Override
+	public void run() {
+		try {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

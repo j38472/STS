@@ -1,0 +1,9 @@
+package com.zgcxueyuan.free;
+
+public class Date {
+	public static void main(String[] args) {
+		long l = ((108*1300)/60)/60;
+		System.out.println(108*1300);
+		
+	}
+}

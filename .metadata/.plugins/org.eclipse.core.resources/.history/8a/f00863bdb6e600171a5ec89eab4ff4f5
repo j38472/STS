@@ -1,0 +1,11 @@
+package com.bxd.one;
+
+import java.awt.*;
+public class AWTDemo {
+
+	public static void main(String[] args) {
+		Frame f = new Frame();
+		System.out.println("asd");
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.bxd.one;
+
+import java.awt.*;
+public class AWTDemo {
+
+	public static void main(String[] args) {
+		Frame f = new Frame("my awt");
+		f.setSize(500, 400);
+		f.setLocation(300, 700);
+		f.setVisible(true);
+		System.out.println("asd");
+	}
+
+}

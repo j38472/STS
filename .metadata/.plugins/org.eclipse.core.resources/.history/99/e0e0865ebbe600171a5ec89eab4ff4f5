@@ -1,0 +1,17 @@
+package com.zgcxueyuan.bxd3;
+import java.io.*;
+import java.net.*;
+/**
+ * สี
+ * @author Administrator
+ *
+ */
+public class Rece implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
