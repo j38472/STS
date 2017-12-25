@@ -1,0 +1,15 @@
+package com.tcp.bxd2;
+
+public class Client {
+/**
+ * 演示tcp的传输的客户端的服务端的互访
+ * @param args
+ * 需求：
+ *	客户端给服务端发送数据，服务端收到后，给客户端反馈数据；
+ */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

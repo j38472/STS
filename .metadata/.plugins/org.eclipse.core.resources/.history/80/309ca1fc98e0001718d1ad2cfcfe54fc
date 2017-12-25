@@ -1,7 +1,0 @@
-package com.zgcxueyuan.day3;
-
-import java.util.Comparator;
-
-public class MyCompare implements Comparator<Poker>{
-
-}

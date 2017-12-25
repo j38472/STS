@@ -1,9 +1,0 @@
-package com.zgcxueyuan.free;
-
-public class MainDemo {
-	public static void main(String[] args) {
-		DateUtil du = new DateUtil("2019-11-16");
-		
-		System.out.println(du.getDay());
-	}
-}

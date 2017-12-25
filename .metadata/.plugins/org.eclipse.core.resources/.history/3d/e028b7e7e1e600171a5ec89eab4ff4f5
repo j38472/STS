@@ -1,0 +1,16 @@
+package com.tcp.bxd2;
+/**
+ * 演示tcp的传输的客户端的服务端的互访
+ * @author Administrator 服务端
+ *需求：
+ *	客户端给服务端发送数据，服务端收到后，给客户端反馈数据；
+ *
+ */
+
+public class Server {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

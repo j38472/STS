@@ -1,0 +1,13 @@
+package com.tcp.bxd2;
+/**
+ * 演示tcp的传输的客户端的服务端的互访
+ * @author Administrator
+ *
+ */
+public class Server {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

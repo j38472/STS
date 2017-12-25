@@ -1,0 +1,42 @@
+package com.tcp.bxd2;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * 演示tcp的传输的客户端的服务端的互访
+ * @author Administrator 服务端
+ *需求：
+ *	客户端给服务端发送数据，服务端收到后，给客户端反馈数据；
+ */
+
+public class Server {
+	public static void main(String[] args) throws Exception{
+		//创建sercerSocket链接,监听10010端口
+		ServerSocket ss = new ServerSocket(10010);
+		//监听并接受
+		Socket s = ss.accept();
+		//获取监听到的Ip地址并打印
+		String ip = s.getInetAddress().getHostAddress();
+		System.out.println(ip+".........connected");
+		//输入流 用于接收客户端发送的
+		InputStream in = s.getInputStream();
+		byte [] buf = new byte [1024];
+		//阻塞式  接受数据并打印
+		int len = in.read(buf);
+		System.out.println(new String(buf,0,len));
+		for (int i = 0; i < buf.length; i++) {
+			if (buf[i]!=0) {
+				buf[i]+=32;
+			}
+		}
+		//创建该ip地址的监听端口的输出流向并输出
+		OutputStream out = s.getOutputStream();
+		out.write("收到".getBytes());
+		//关闭监听到的端口的sercerSocket
+		ss.close();
+	}
+
+}

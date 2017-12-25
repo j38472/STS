@@ -1,8 +1,0 @@
-package com.zgcxueyuan.free;
-
-public class MainDemo {
-	public static void main(String[] args) {
-		DateUtil du = new DateUtil("2017-11-02");
-		System.out.println(du.getYear());
-	}
-}

@@ -1,0 +1,31 @@
+package com.tcp.bxd3;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+
+/**
+ * 客户端
+ * @author Administrator
+ *需求
+ *	建立一个文本转换服务器。
+ *客户端给服务端发文本，服务端将文本转换成大写的在返回客户端
+ *而且客户端可以不断进行文本转换，当客户端输入over时转换结束
+ */
+public class Client {
+	public static void main(String[] args) throws Exception{
+		String line=null;
+		Socket s= new Socket("192.168.8.100", 10010);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter out = new PrintWriter(s.getOutputStream(),true);
+		BufferedReader bufIn = new BufferedReader(new InputStreamReader(s.getInputStream()));
+		while ((line=br.readLine())!=null) {
+			out.println(line);
+			String str = bufIn.readLine();
+			System.out.println("server"+str);
+		}
+		s.close();
+		
+	}
+}
