@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload{
+		function btnOne() {
+			alert('1');
+		}
+	}
+</script>
+</head>
+<body>
+	<input id="btn1" type="button" value="全选" onclick="btnOne()"/>
+	<input id="btn2" type="button" value="不选" />
+	<input id="btn3" type="button" value="反选" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+	<input type="checkbox" />
+	<br />
+</body>
+</html>

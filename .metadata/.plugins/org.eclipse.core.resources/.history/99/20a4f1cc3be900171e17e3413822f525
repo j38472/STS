@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function btnOne() {
+		//全选
+		var oBtn1 = document.getElementById('btn1');
+		var oDiv1 = document.getElementById('div1');
+		var oCh = oDiv1.getElementsByTagName('input');
+		//全不选
+		var oBtn2 = document.getElementById('btn2');
+		var oDiv2 = document.getElementById('div2');
+		var oCh2 = oDiv1.getElementsByTagName('input');
+		oBtn1.onclick = function() {
+			var i = 0;
+			while (i < oCh.length) {
+				oCh[i].checked = true;
+				i++;
+			}
+		};
+		
+	};
+</script>
+</head>
+<body>
+	<input id="btn1" type="button" value="全选" />
+	<input id="btn2" type="button" value="不选" />
+	<input id="btn3" type="button" value="反选" />
+	<br />
+	<div id='div1'>
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br />
+	</div>
+</body>
+</html>

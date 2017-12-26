@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function btnOne() {
+		
+		var oBtn1 = document.getElementById('btn1');//全选
+		var oBtn2 = document.getElementById('btn2');//全不选
+		var oBtn3 = document.getElementById('btn2');//反选
+		
+		
+		var oDiv1 = document.getElementById('div1');//获取div1中所有元素
+		var oCh = oDiv1.getElementsByTagName('input');//获取获取div1中所有input元素
+		
+		oBtn1.onclick = function() {//全选函数
+			var i = 0;
+			while (i < oCh.length) {
+				oCh[i].checked = true;
+				i++;
+			}
+		};
+		oBtn2.onclick = function() {//全不选函数
+			var i = 0;
+			while (i < oCh.length) {
+				oCh[i].checked = false;
+				i++;
+			}
+		};
+		oBtn3.onclick = function() {//反选函数
+			var i = 0;
+			while (i < oCh.length) {
+				if(oCh[i].checked = true){
+					oCh[i].checked = false;
+				}else {
+					oCh[i].checked = true;
+				}
+				
+				i++;
+			}
+		};
+		
+	};
+</script>
+</head>
+<body>
+	<input id="btn1" type="button" value="全选" />
+	<input id="btn2" type="button" value="不选" />
+	<input id="btn3" type="button" value="反选" />
+	<br />
+	<div id='div1'>
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br /> <input type="checkbox" /> <br />
+		<input type="checkbox" /> <br />
+	</div>
+</body>
+</html>

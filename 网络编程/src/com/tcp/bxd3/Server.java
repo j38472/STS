@@ -16,20 +16,25 @@ import java.net.Socket;
  */
 public class Server {
 	public static void main(String[] args) throws Exception{
-		ServerSocket ss = new ServerSocket(10010);
+		ServerSocket ss = new ServerSocket(10020);
 		Socket s = ss.accept();
 		String ip = s.getInetAddress().getHostAddress();
 		System.out.println(ip+".....ocnnected");
 		//读取socket读取流中的数据
 		BufferedReader bufIn = new BufferedReader(new InputStreamReader(s.getInputStream()));
+//		BufferedWriter bufOut = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
 		PrintWriter out = new PrintWriter(s.getOutputStream(),true);
 		String line = null;
 		while ((line=bufIn.readLine())!=null) {
 			System.out.println(line);
+//			bufOut.write(line.toUpperCase());
+//			bufOut.newLine();
+//			bufOut.flush();
+			out.flush();
 			out.println(line.toUpperCase());
 		}
-		ss.close();
 		s.close();
+		ss.close();
 		
 	}
 }

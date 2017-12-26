@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width: 200px;
+		height: 300px;
+		font: left;
+		border: 3px;
+		soliod black;
+		margin: 10px;
+	}
+</style>
+<script type="text/javascript">
+	window.onload=function (){
+		var aDiv=document.getElementsbyTagName('div');
+	}
+</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
