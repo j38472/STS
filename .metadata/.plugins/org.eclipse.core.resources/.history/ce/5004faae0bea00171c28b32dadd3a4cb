@@ -1,0 +1,10 @@
+package com.zgcxueyuan.free;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class PathDemo {
+	public static void main(String[] args) {
+		Path p  = Paths.get("e:", "asd")
+	}
+}

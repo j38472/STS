@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#div1 {
+width:200px;
+height:150px;
+	border: 1px solid red;
+}
+</style>
+</head>
+<body>
+	<input id="txt1" type="text" />
+	<input id="btn1" type="button" value="设置文字" />
+	<div id="div1"></div>
+</body>
+</html>

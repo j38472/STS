@@ -1,0 +1,10 @@
+package com.bxd;
+/**
+ * 联通的编码问题：
+ * 	在桌面上新建一个文本文件上面保存“联通”，在进行一次保存（编码）以及打开（解码）后乱码
+ * @author Administrator
+ *
+ */
+public class EncodeDemo2 {
+
+}

@@ -1,0 +1,15 @@
+package com.tcp.bxd4;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * ·þÎñ¶Ë
+ * @author Administrator
+ *
+ */
+public class Server {
+	public static void main(String[] args) {
+		ServerSocket ss = new ServerSocket(10010);
+	}
+}

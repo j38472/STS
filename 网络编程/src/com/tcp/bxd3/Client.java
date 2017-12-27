@@ -15,19 +15,20 @@ public class Client {
 	public static void main(String[] args) throws Exception {
 		Socket s = new Socket("192.168.8.100", 10020);
 		BufferedReader bufr = new BufferedReader(new InputStreamReader(System.in));
-		 PrintWriter out = new PrintWriter(s.getOutputStream(),true);
-//		BufferedWriter bufOut = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+		PrintWriter out = new PrintWriter(s.getOutputStream(), true);
+		// BufferedWriter bufOut = new BufferedWriter(new
+		// OutputStreamWriter(s.getOutputStream()));
 		BufferedReader bufIn = new BufferedReader(new InputStreamReader(s.getInputStream()));
 		String line = null;
 		while ((line = bufr.readLine()) != null) {
 			if ("over".equals(line))
 				break;
-//			bufOut.write(line);
-//			bufOut.newLine();
-//			bufOut.flush();
+			// bufOut.write(line);
+			// bufOut.newLine();
+			// bufOut.flush();
 			out.flush();
 			out.println(line);
-			 
+
 			String str = bufIn.readLine();
 			System.out.println("server::" + str);
 		}

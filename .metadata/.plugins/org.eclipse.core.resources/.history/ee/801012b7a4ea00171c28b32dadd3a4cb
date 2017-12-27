@@ -1,0 +1,819 @@
+<!DOCTYPE	html PUBLIC	"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>贵美商城</title>
+<style type="text/css">
+body {
+	border: 0px;
+	padding: 0px;
+	margin: 0px auto;
+	font: 12px Tahoma;
+}
+
+div, ul, li, dt, dl {
+	float: left;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:active {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff7300;
+}
+
+input {
+	border: 1px #333333 solid;
+	margin: 0px;
+	padding: 0px;
+}
+
+a img {
+	border: 0px;
+}
+
+.red {
+	color: red;
+	font-weight: bold;
+	text-align: left;
+}
+
+.b {
+	font-weight: bold;
+}
+
+#container {
+	width: 980px;
+	margin: 0 auto;
+	float: none;
+}
+
+#header {
+	width: 980px;
+	height: 136px;
+	margin: 0px auto;
+	background: url(./images/h_bg.jpg) no-repeat -22px 0px;
+}
+
+#logo {
+	width: 250px;
+	height: 108px;
+	float: left;
+	background: url(./images/h_bg.jpg) no-repeat -22px 0px;
+}
+
+.upright_menu {
+	float: right;
+	padding: 15px 20px 0px 0px;
+}
+
+.pic {
+	width: 28px;
+	height: 26px;
+}
+
+.pic1 {
+	background: url(./images/icon.gif) no-repeat;
+}
+
+.pic2 {
+	background: url(./images/icon.gif) no-repeat -28px 0px;
+}
+
+.pic3 {
+	background: url(./images/icon.gif) no-repeat -56px 0px;
+}
+
+.pic5 {
+	background: url(./images/icon.gif) no-repeat -84px 0px;
+}
+
+.pic6 {
+	background: url(./images/icon.gif) no-repeat -112px 0px;
+}
+
+.h_text {
+	padding: 6px 5px 0px 5px;
+	padding-top: 8px\0;
+	text-align: center;
+}
+
+.login {
+	background: url(./images/icon.gif) no-repeat 0px -25px;
+}
+
+.reg {
+	background: url(./images/icon.gif) no-repeat 0px -25px;
+}
+
+.upright_bottom {
+	width: 600px;
+	height: 26px;
+	float: right;
+	padding: 7px 0px 0px 0px;
+}
+
+.bt {
+	width: 38px;
+	height: 26px;
+}
+
+.hello {
+	padding: 11px 33px 0px 0px;
+	color: #636362;
+	letter-spacing: 3px;
+}
+
+.nav {
+	width: 980px;
+}
+
+.nav li {
+	width: 84px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+
+.nav li a {
+	padding: 8px 10px;
+}
+
+.nav li a:link, .nav li a:active, .nav li a:visited {
+	padding: 8px 10px;
+	color: #333333;
+	font-size: 13px;
+}
+
+.nav li a:hover {
+	padding: 8px 10px;
+	background: url(./images/nav_bg.png) no-repeat !important;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true",
+		sizingMethod="scale", src="./images/nav_bg.png");
+	_background-image: none;
+}
+
+#main {
+	width: 980px;
+	margin: 0 auto;
+	border: 0px;
+	float: left;
+}
+
+#left {
+	width: 204px;
+	height: 644px;
+	padding: 38px 0px 0px 0px;
+	background: url(./images/bg.gif) no-repeat;
+}
+
+.left_list, .right_list {
+	padding: 0px 10px 0px 13px;
+	width: 174px;
+}
+
+.left_class {
+	font-size: 14px;
+	color: #ff7300;
+	font-weight: bold;
+	float: none;
+	padding: 9px 0px 0px 0px;
+}
+
+.left_li {
+	color: #636362;
+	width: 58px;
+	line-height: 24px;
+}
+
+.width_8px {
+	width: 8px;
+	height: 644px;
+}
+
+#content {
+	width: 527px;
+	background: url(./images/bg.gif) no-repeat -212px 0px;
+}
+
+.content_top {
+	width: 527px;
+	padding-top: 8px;
+	height: 182px;
+}
+
+#adv1, #adv2, #adv3, #adv4 {
+	display: none;
+}
+
+#adv {
+	position: absolute;
+	left: 480px;
+	top: 315px;
+	text-align: center;
+}
+
+#adv a {
+	font-size: 13px;
+	text-decoration: none;
+	background-color: #cccccc;
+	padding: 0px 5px;
+}
+
+.content_list {
+	width: 524px;
+	height: 449px;
+	padding-top: 58px;
+	*padding-top: 50px;
+}
+
+.content_li {
+	width: 166px;
+	padding: 3px 0px;
+	text-align: center;
+}
+
+.content_img {
+	width: 142px;
+	height: 89px;
+	float: none;
+	text-align: center;
+}
+
+#right {
+	width: 233px;
+	height: 644px;
+	background: url(./images/bg.gif) no-repeat -747px 0px;
+}
+
+.right_list dl {
+	padding: 10px 10px 0px 0px;
+	*width: 190px;
+}
+
+.right_list dt {
+	padding: 0px 5px 0px 0px;
+}
+
+.right_list dd {
+	line-height: 17px;
+	white-space: nowrap;
+}
+
+.right_list img {
+	border: 1px solid #9ea0a2;
+}
+
+.r1 {
+	width: 200px;
+	height: 170px;
+}
+
+.r2 dl dt img {
+	width: 60px;
+	height: 47px;
+}
+
+.r2 dd {
+	padding-top: 20px;
+}
+
+#tab {
+	padding-top: 14px;
+}
+
+#tabtitle1 {
+	cursor: pointer;
+	width: 80px;
+	height: 50px;
+	background: url(images/bg.gif) no-repeat -761px -430px;
+}
+
+#tabtitle2 {
+	cursor: pointer;
+	width: 153px;
+	height: 50px;
+	background: url(images/bg.gif) no-repeat -840px -430px;
+}
+
+#tab1, #tab2 {
+	display: none;
+}
+
+#footer {
+	width: 980px;
+	height: 150px;
+	float: none;
+}
+
+.copyright {
+	width: 980px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.register_textBroader {
+	width: 125px;
+}
+
+#advLeft {
+	position: absolute;
+	height: 74px;
+	width: 74px;
+	z-index: 1;
+}
+
+#advRight {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	z-index: 1;
+}
+
+#closeLeft {
+	cursor: pointer;
+	position: absolute;
+	height: 13px;
+	width: 13px;
+	z-index: 2;
+}
+
+#closeRight {
+	cursor: pointer;
+	position: absolute;
+	height: 13px;
+	width: 13px;
+	z-index: 2;
+}
+
+.list_bg {
+	background: url(./images/list_bg.gif) repeat-x;
+}
+
+.reg_text {
+	width: 130px;
+	height: 18px;
+	margin: 5px 5px;
+}
+
+.input_title {
+	width: 160px;
+	text-align: right;
+}
+
+.input_content {
+	width: 507px;
+	text-align: left;
+	padding: 5px 5px;
+}
+
+.reg_bg {
+	background: url(./images/reg_bg.gif) repeat-x;
+}
+
+.login_bg {
+	padding-top: 50px;
+	background: url(./images/login_bg.gif) repeat-x;
+}
+
+textarea {
+	border: 1px solid #cccccc;
+	padding: 5px;
+}
+
+.a_l {
+	text-align: left;
+}
+
+.a_r {
+	text-align: right;
+}
+
+.a_c {
+	text-align: center;
+}
+
+.f_l {
+	float: left;
+}
+
+.f_r {
+	float: right;
+}
+
+.f_n {
+	float: none;
+}
+
+/*input大小*/
+.n4 {
+	width: 35px;
+}
+
+.w3p {
+	width: 3%;
+}
+
+.w10p {
+	width: 10%;
+}
+
+.w15p {
+	width: 15%;
+}
+
+.w20p {
+	width: 20%;
+}
+
+.w25p {
+	width: 25%;
+}
+
+.w50p {
+	width: 50%;
+}
+
+.w63p {
+	width: 63%;
+}
+
+.w87p {
+	width: 87%;
+}
+
+.w9 {
+	width: 9px;
+}
+
+.w84 {
+	width: 84px;
+}
+
+.w81 {
+	width: 81px;
+}
+
+.w100 {
+	width: 100px;
+}
+
+.w129 {
+	width: 129px;
+}
+
+.w252 {
+	width: 252px;
+}
+
+.w350 {
+	width: 350px;
+}
+
+.w364 {
+	width: 364px;
+}
+
+.w507 {
+	width: 507px;
+}
+
+.h24 {
+	height: 24px;
+}
+
+.h32 {
+	height: 32px;
+}
+
+.h34 {
+	height: 34px;
+}
+
+.h35 {
+	height: 35px;
+}
+
+.h40 {
+	height: 40px;
+}
+
+.h58 {
+	height: 58px;
+}
+
+.h65 {
+	height: 65px;
+}
+
+.h460 {
+	height: 460px;
+}
+
+.h20p {
+	height: 20%;
+}
+
+.h37p {
+	height: 37%;
+}
+
+.h43p {
+	height: 43%;
+}
+
+input checkbox {
+	border: 0;
+}
+
+.warn {
+	color: red;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.0.js"></script>
+<script type="text/javascript">
+	//验证名字
+	function checkFname() {
+		var $fname = $("#fname");
+		var $divID = $("#DivFname");
+		$divID.html("");
+		if ($fname.val() == "") {
+			$divID.html("名字不能为空");
+			return false;
+		}
+
+		return true;
+	}
+	//验证姓氏
+	function checkName() {
+		var $name = $("#lname");
+		var $divID = $("#DivName");
+		$divID.html("");
+		if ($name.val() == "") {
+			$divID.html("姓氏不能为空");
+			return false;
+		}
+
+		return true;
+	}
+
+	//验证Email
+	function checkEmail() {
+		var $mail = $("#email");
+		var $divID = $("#DivEmail");
+		$divID.html("");
+		if ($mail.val() == "") {
+			$divID.html("Email不能为空");
+			return false;
+		}
+		if ($mail.val().indexOf("@") == -1) {
+			$divID.html("Email格式不正确，必须包含@");
+			return false;
+		}
+		if ($mail.val().indexOf(".") == -1) {
+			$divID.html("Email格式不正确，必须包含.");
+			return false;
+		}
+		return true;
+	}
+	//验证密码
+	function checkPass() {
+		var $pwd = $("#pwd");
+		var $divID = $("#DivPwd");
+		$divID.html("");
+		if ($pwd.val() == "") {
+			$divID.html("密码不能为空");
+			return false;
+		}
+		if ($pwd.val().length < 6) {
+			$divID.html("密码必须等于或大于6个字符");
+			return false;
+		}
+		return true;
+	}
+	//验证重复密码
+	function checkRePass() {
+		var $pwd = $("#pwd");
+		var $repwd = $("#repwd");
+		var $divID = $("#DivRepwd");
+		$divID.html("");
+		if ($pwd.val() != $repwd.val()) {
+			$divID.html("两次输入的密码不一致");
+			return false;
+		}
+		return true;
+	}
+
+	$(function() {
+
+		$("#fname").blur(checkFname);
+		$("#lname").blur(checkName);
+		$("#email").blur(checkEmail);
+		$("#pwd").blur(checkPass);
+		$("#repwd").blur(checkRePass);
+
+		$("#myform").submit(function() {
+
+			var flag = true;
+			if (!checkFname())
+				flag = false;
+			if (!checkName())
+				flag = false;
+			if (!checkEmail())
+				flag = false;
+			if (!checkPass())
+				flag = false;
+			if (!checkRePass())
+				flag = false;
+
+			return flag;
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="logo"></div>
+			<div class="upright_menu">
+				<ul>
+					<li class="pic pic1"></li>
+					<li class="h_text"><a href="#" target="_parent">购物车</a></li>
+					<li class="pic pic2"></li>
+					<li class="h_text"><a href="#" target="_parent">帮助中心</a></li>
+					<li class="pic pic5"></li>
+					<li class="h_text"><a href="#" onclick="addFav();">加入收藏</a></li>
+					<li class="pic pic6"></li>
+					<li class="h_text"><a href="#" onclick="setHome(this);">设为首页</a></li>
+					<li class="bt login h_text"><a href="#" target="_parent">登录</a></li>
+					<li class="bt reg h_text"><a href="#" target="_parent">注册</a></li>
+				</ul>
+			</div>
+			<div class="upright_bottom">
+				<ul>
+					<li class="h_text	hello">你好，欢迎访问贵美商城！ <script
+							type="text/JavaScript">
+						now = new Date;
+						document.write(now.getYear() + "年"
+								+ (now.getMonth() + 1) + "月" + now.getDate()
+								+ "日" + now.getHours() + "点" + now.getMinutes()
+								+ "分");
+					</script>
+					</li>
+				</ul>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.htm" target="_parent"> 首   页 </a></li>
+					<li><a href="commoditys_show.htm" target="_parent">家用电器</a></li>
+					<li><a href="commoditys_show.htm" target="_parent">手机数码</a></li>
+					<li><a href="commoditys_show.htm" target="_parent">日用百货</a></li>
+					<li><a href="commoditys_show.htm" target="_parent"> 书   籍 </a></li>
+					<li><a href="help.htm" target="_parent">帮助中心</a></li>
+					<li><a href="help.htm" target="_parent">免费开店</a></li>
+					<li><a href="help.htm" target="_parent">全球咨询</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<form id="myform" name="myform" method="get" action="zhuye2.html">
+			<table id="main" class="reg_bg" cellpadding="0px">
+				<tbody>
+					<tr class="h58">
+						<td colspan="3"> </td>
+						<td rowspan="11">
+							<h4>
+								<img src="images/read.gif" alt="alt" />阅读贵美网服务协议
+							</h4> <textarea id="textarea" cols="30" rows="15">欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。
+  </textarea>
+						</td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">名字：</td>
+						<td class="input_content"><input id="fname" type="text"
+							class="reg_text" size="24" /><span class='warn' id='DivFname'></span></td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">姓氏：</td>
+						<td class="input_content"><input id="lname" type="text"
+							class="reg_text" size="24" /><span class='warn' id='DivName'></span></td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">登录名：</td>
+						<td class="input_content"><input name="sname" type="text"
+							class="reg_text" size="24" /></td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">密码：</td>
+						<td class="input_content"><input id="pwd" type="password"
+							class="reg_text" size="26" /> <span class='warn' id='DivPwd'></span></td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">再次输入密码：</td>
+						<td class="input_content"><input id="repwd" type="password"
+							class="reg_text" size="26" /><span class='warn' id='DivRepwd'></span>
+						</td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">电子邮箱：</td>
+						<td class="input_content"><input id="email" type="text"
+							class="reg_text" size="24" /> <span class='warn' id='DivEmail'></span></td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">性别：</td>
+						<td class="input_content"><input id="gen"
+							style="border: 0px;" type="radio" value="男" checked="checked" />
+							<img src="images/Male.gif" width="23" height="21" alt="alt" />男 
+							<input name="gen" style="border: 0px;" type="radio" value="女"
+							class="input" /> <img src="images/Female.gif" width="23"
+							height="21" alt="alt" />女</td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">头像：</td>
+						<td class="input_content"><input type="file" /></td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">爱好：</td>
+						<td class="input_content"><label> <input
+								type="checkbox" id="checkbox" value="checkbox" />
+						</label> 运动   <label> <input type="checkbox" id="checkbox2"
+								value="checkbox" />
+						</label> 聊天   <label> <input type="checkbox" id="checkbox3"
+								value="checkbox" />
+						</label> 玩游戏</td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title">出生日期：</td>
+						<td class="input_content"><input id="nYear"
+							class="reg_text n4" value="yyyy" maxlength="4" /> 年   <select
+							id="nMonth">
+								<option value="" selected="selected">[选择月份]</option>
+								<option value="0">一月</option>
+								<option value="1">二月</option>
+								<option value="2">三月</option>
+								<option value="3">四月</option>
+								<option value="4">五月</option>
+								<option value="5">六月</option>
+								<option value="6">七月</option>
+								<option value="7">八月</option>
+								<option value="8">九月</option>
+								<option value="9">十月</option>
+								<option value="10">十一月</option>
+								<option value="11">十二月</option>
+						</select> 月   <input id="nDay" class="reg_text n4" value="dd" size="2"
+							maxlength="2" />日</td>
+					</tr>
+					<tr class="register_table_line">
+						<td class="input_title h35"> </td>
+						<td class="input_content h35"><input type="image" id="Button"
+							style="border: 0px;" src="images/submit.gif"
+							onclick="javascript: $('#myfrom').submit()" /> <img
+							src="images/reset.gif" style="cursor: pointer;" alt="重置" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="h65"> </td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div id="footer">
+			<div class="copyright">
+				友情链接：  <a href="#">百度</a> | <a href="#">Google</a> | <a href="#">雅虎</a>
+				| <a href="#">淘宝</a> | <a href="#">拍拍</a> | <a href="#">易趣</a> | <a
+					href="#">当当</a> | <a href="#">京东商城</a> | <a href="#">迅雷</a> | <a
+					href="#">新浪</a> | <a href="#">网易</a> | <a href="#">搜狐</a> | <a
+					href="#">猫扑</a> | <a href="#">开心网</a> | <a href="#">新华网</a> | <a
+					href="#">凤凰网</a><br />
+				<hr size="1" />
+				COPYRIGHT &copy; 2003-2010 <a href="index.htm" target="_parent">北京市贵美商城有限公司</a>
+				ALL RIGHT RESERVED<br /> 热线：400-66-13060 Email:service@prd.com<br />
+				ICP：<a href="#">沪ICP备05021104号</a><br /> <img src="images/img1.gif"
+					alt="alt" /><img src="images/img2.gif" alt="alt" /><img
+					src="images/img3.gif" alt="alt" /><img src="images/img4.gif"
+					alt="alt" />
+			</div>
+		</div>
+	</div>
+</body>
+</html>
