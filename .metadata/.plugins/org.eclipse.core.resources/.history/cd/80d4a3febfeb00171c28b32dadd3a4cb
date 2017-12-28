@@ -1,0 +1,8 @@
+package com.bxd.join·½·¨;
+
+public class Main {
+
+}
+class Demo implements Runnable{
+	
+}

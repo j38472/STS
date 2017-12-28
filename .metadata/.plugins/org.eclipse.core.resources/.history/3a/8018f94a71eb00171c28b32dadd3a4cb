@@ -1,0 +1,57 @@
+package com.bxd.生产者消费者升级版;
+
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+/**
+ * 资源类
+ * 
+ * @author Administrator
+ *
+ */
+public class Resource {
+	private String name;// 产品名称
+	private int count = 1;// 编号
+	private boolean flag = false;
+	private Lock lock = new ReentrantLock();
+	private Condition condition_pro = lock.newCondition();
+	private Condition condition_con = lock.newCondition();
+
+	public void set(String name) throws InterruptedException{
+		lock.lock();
+		try {
+			while (flag) {
+				condition_pro.await();
+			}
+			this.name = name + "--" + count++;
+			System.out.println(Thread.currentThread().getName() + "..生产者.." + this.name);
+			flag = true;
+			condition_pro.signalAll();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			lock.unlock();
+		}
+
+	}
+
+	public void out() throws InterruptedException{
+		lock.lock();
+		try {
+			while (!flag) {
+				condition_pro.await();
+			}
+			System.out.println(Thread.currentThread().getName() + "..消费者..........." + this.name);
+			flag = false;
+			condition_pro.signalAll();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			lock.unlock();
+		}
+
+	}
+}

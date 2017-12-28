@@ -1,0 +1,5 @@
+package com.bxd.生产者消费者;
+
+public class Resource {
+
+}

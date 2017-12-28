@@ -1,0 +1,11 @@
+package com.bxd.生产者消费者;
+/**
+ * 资源类
+ * @author Administrator
+ *
+ */
+public class Resource {
+	private String name;//产品名称
+	private int count = 1;//编号
+	private boolean flag = false ;
+}

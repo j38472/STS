@@ -1,9 +1,0 @@
-package com.zgcxueyuan.bxd;
-/**
- * 
- */
-public class UdpDemo {
-	public static void main(String[] args) {
-		
-	}
-}

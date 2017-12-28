@@ -1,0 +1,15 @@
+package com.bxd.生产者消费者;
+
+/**
+ * 生产者
+ * 
+ * @author Administrator
+ *
+ */
+public class Producer {
+	private Resource res;
+
+	Producer(Resource res) {
+		this.res=res;
+	}
+}

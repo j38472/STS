@@ -1,5 +1,0 @@
-package com.zgcxueyuan.text;
-
-public class Staff extends Employee {
-	 int attendanceRate;//¿¼ÇÚ 1-100
-}

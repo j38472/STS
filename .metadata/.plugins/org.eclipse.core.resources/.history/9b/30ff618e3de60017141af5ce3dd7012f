@@ -1,7 +1,0 @@
-package com.zgcxueyuan.bxd2;
-
-public class UdpRece {
-	public static void main(String[] args) {
-		
-	}
-}

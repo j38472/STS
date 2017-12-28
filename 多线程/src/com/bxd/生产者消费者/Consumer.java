@@ -1,0 +1,21 @@
+package com.bxd.生产者消费者;
+/**
+ * 消费者
+ * @author Administrator
+ *
+ */
+public class Consumer implements Runnable {
+
+	private Resource res;
+
+	Consumer(Resource res) {
+		this.res = res;
+	}
+
+	public void run() {
+		while (true) {
+			res.out();
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.bxd.生产者消费者;
+/**
+ * 资源类
+ * @author Administrator
+ *
+ */
+public class Resource {
+	private String name;//产品名称
+	private int count = 1;//编号
+	private boolean flag = false ;
+	public synchronized void set (String name){
+		if (flag) {
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		this.name = name +"--"+count++;
+		System.out.println(Thread.currentThread().getName()+"..生产者.."+this.name);
+	}
+	public synchronized void out (){
+		System.out.println(Thread.currentThread().getName()+"..消费者.."+this.name);
+	}
+}

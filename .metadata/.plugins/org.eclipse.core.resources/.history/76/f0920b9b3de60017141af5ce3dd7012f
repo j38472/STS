@@ -1,9 +1,0 @@
-package com.zgcxueyuan.bxd2;
-
-public class UdpSend {
-
-	public static void main(String[] args) {
-
-	}
-
-}
