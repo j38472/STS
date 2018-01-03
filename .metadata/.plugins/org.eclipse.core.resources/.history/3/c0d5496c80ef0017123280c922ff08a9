@@ -1,0 +1,27 @@
+package com.zgcxueyuan.free;
+
+public class A10_26 {
+	public static void main(String[] args) {
+		long l = 012;
+//		int i = (int)true;
+		double f =5+5.5;
+//		int i  = "asd"+4;
+		int i  = 'f'+4;
+		double d = 0x123456;
+		System.out.println(d);
+		System.out.println(f);
+//		int i = 0;
+//		for (int i1 = 1; i1 <= 5; i1++) {
+//			for (int i2 = 1; i2 <= 5; i2++) {
+//				for (int i5 = 1; i5 <= 5; i5++) {
+//					if (i1 != i2 && i2 != i5) {
+//						i++;
+//					}
+//				}
+//			}
+//
+//		}
+//		System.out.println(i); 
+	}
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

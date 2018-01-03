@@ -1,0 +1,31 @@
+package com.zgcxueyuan.free;
+
+public abstract class A18_1_2 {
+	public int i = 0;
+
+	public A18_1_2() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void demo() {
+		System.out.println();
+	}
+
+	public static void main(String[] args) {
+		String myString = null;
+		int x = 100;
+		if (x < 100)
+			myString = "x is less than 100";
+		if (x > 100)
+			myString = "x is greater than 100";
+		System.out.println(myString.length());
+
+	}
+}
+
+class A {
+
+}
+class B extends A {
+
+}

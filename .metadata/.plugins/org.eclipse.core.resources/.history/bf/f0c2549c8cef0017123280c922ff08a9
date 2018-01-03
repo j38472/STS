@@ -1,0 +1,11 @@
+package com.zgcxueyuan.free;
+
+public abstract class A18_1_2 {
+	public int i = 0;
+	public A18_1_2() {
+		// TODO Auto-generated constructor stub
+	}
+	public static void demo (){
+		System.out.println();
+	}
+}
