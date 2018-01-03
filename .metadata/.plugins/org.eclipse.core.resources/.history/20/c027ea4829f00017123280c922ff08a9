@@ -1,0 +1,13 @@
+package com.zgcxueyuan.free;
+
+import java.util.*;
+
+public class A18_1_3 {
+	public static void main(String[] args) {
+		Set s = new HashSet<String>();
+		s.add("aaa");
+		s.add("bbb");
+		s.add("aaa");
+		System.out.println(s.size());
+	}
+}
