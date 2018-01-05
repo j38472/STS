@@ -1,0 +1,9 @@
+package com.zgcxueyuan.free;
+
+public class A18_1_4 {
+	public static void main(String[] args) {
+		if (("abcd" instanceof Object)==false) {
+			System.out.println("true");
+		}
+	}
+}

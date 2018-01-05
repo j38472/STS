@@ -1,0 +1,14 @@
+package com.zgcxueyuan.free;
+
+public class A18_1_4 {
+	public static void main(String[] args) {
+		String String = "sd";
+		float f = 2.0f;
+		double d = 2.0;
+		long l =2;
+		System.out.println(String);
+		if (("abcd" instanceof String)==true) {
+			System.out.println("true");
+		}
+	}
+}

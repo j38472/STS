@@ -1,0 +1,11 @@
+package com.zgcxueyuan.free;
+
+public class A18_1_4 {
+	public static void main(String[] args) {
+		String String = "sd";
+		System.out.println(String);
+		if (("abcd" instanceof String)==true) {
+			System.out.println("true");
+		}
+	}
+}

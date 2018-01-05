@@ -1,0 +1,65 @@
+package com.zgcxueyuan.free;
+
+public class A18_1_4 {
+//	 A18_1_4(int i) {
+//		 System.out.println(i);
+//	 }
+	
+	public static void main(String[] args) {
+		
+		Test1 t= new Test1();
+		
+//		A18_1_4 a = new A18_1_4(5);
+		
+//		int a = 10;
+//		int i = 0, k = 0;
+//		if (i == 0 || a == 10 && ++k > 0)
+//			i = 10;
+//		System.out.println(k);
+//		System.out.println(i);
+		
+		// int a = 1;
+		// int[] b = { 1, 2, 3 };
+		// String s = "abc";
+		// int[] c = { 1, 2, 3 };
+		// test(a, b, s, c);
+		// System.out.println(a);
+		// System.out.println(b[0]);
+		// System.out.println(s);
+		// System.out.println(c[0]);
+
+		// String String = "sd";
+		// float f = 2.0f;
+		// double d = 2.0;
+		// long [] l = new long [10];
+		// float []f[] = new float[5][5];
+		// System.out.println(l[6]);
+		// System.out.println(String.length());
+		// if (("abcd" instanceof String)==true) {
+		// System.out.println("true");
+		// }
+	}
+
+	public static void test(int a, int[] b, String s, int[] c) {
+		 a = 100;
+		b = new int[3];
+		b[0] = 99;
+		s += "efg";
+		c[0] = 10;
+
+	}
+}
+interface Parent {
+	public int count(int i);
+}
+class Test1 implements Parent{
+	@Override
+	public int count(int i) {
+		// TODO Auto-generated method stub
+		return i%9;
+	}
+	public static void main (String [] args){
+		Test1 p = new Test1();
+		int i  = p.count(20);
+	}
+}
